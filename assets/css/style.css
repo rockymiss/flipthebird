@@ -52,5 +52,21 @@ body {
     outline: none;
     font-size: 1.2rem;
   }
+
+  .hide {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    flex: 1;
+    color: #af4e16;
+  }
+  
+  .name-input {
+    border: 1px solid #dddddd;
+  }
   
   
