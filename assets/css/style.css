@@ -16,4 +16,28 @@ body {
     text-align: center;
     color: #af4e16;
   }
+
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 0;
+    color: #cee7e6;
+  }
+  
+  .name-container,
+  .game-select-container {
+    background-color: #f2c078 !important;
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    padding: 3rem 0;
+    text-align: center;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+  }
+  
   
