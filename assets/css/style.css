@@ -1,5 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rock+Salt&family=Shizuru&family=Smooch+Sans:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
 }
+
+body {
+    background: linear-gradient(#4dccbd, #54494b);
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 8rem;
+    text-align: center;
+    color: #af4e16;
+  }
+  
