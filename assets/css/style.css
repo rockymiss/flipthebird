@@ -40,7 +40,17 @@ body {
     justify-content: center;
   }
 
-  .name-input {
+  .global-btn {
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    font-size: 1rem;
+    background-color: #af4e16;
+    color: #cee7e6;
+    margin: 0.5rem;
+    width: 10em;
+  }
+
+  #name-input {
     margin: 2rem 0;
     height: 3rem;
     width: 20rem;
@@ -48,7 +58,7 @@ body {
     border-radius: 10px;
   }
   
-  input.name-input {
+  input#name-input {
     outline: none;
     font-size: 1.2rem;
   }
