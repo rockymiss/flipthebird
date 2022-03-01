@@ -10,99 +10,15 @@ body {
     background: linear-gradient(#4dccbd, #54494b);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-  }
-  
-  h1 {
-    font-size: 8rem;
-    text-align: center;
-    color: #af4e16;
-  }
-
-  .details-container {
-    display: flex;
-    justify-content: space-between;
-    width: 70vw;
-    margin: auto;
-    text-align: center;
-    padding: 3rem 0;
-    color: #cee7e6;
-  }
-  
-  .name-container,
-  .game-select-container {
-    background-color: #f2c078 !important;
-    width: 60vw;
-    height: auto;
-    margin: auto;
-    padding: 3rem 0;
-    text-align: center;
-    border-radius: 10px;
-    display: grid;
-    justify-content: center;
-  }
-
-  .global-btn {
-    border-radius: 5px;
-    padding: 0.5em 0.5em;
-    font-size: 1rem;
-    background-color: #af4e16;
-    color: #cee7e6;
-    margin: 0.5rem;
-    width: 10em;
-  }
-
-  #name-input {
-    margin: 2rem 0;
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  input#name-input {
-    outline: none;
-    font-size: 1.2rem;
-  }
+    
+}
 
   .hide {
     display: none;
   }
   
-  h2 {
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
-    justify-content: center;
-    flex: 1;
-    color: #af4e16;
-  }
-  
-  .name {
-    border: 1px solid #dddddd;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: repeat(4, 8rem);
-    grid-template-rows: repeat(4,8rem);
-    justify-content: center;
-    padding: 0.8rem;
-    background-color: #f2c078;
-    max-width: fit-content;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .face-card,
   .back-card {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
+   background-image: url('https://res.cloudinary.com/rockymiss/image/upload/v1646170940/Flip%20the%20Bird/flip-the-bird-card_acwcw6.png'); 
   }
   
   
