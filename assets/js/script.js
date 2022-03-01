@@ -7,8 +7,8 @@ const imagesQuiz = document.getElementById('quiz-container-images');
 
 function getFormDetails(event) {
     event.preventDefault();
-    nameContainer.classList.toggle('hide');
-    gameSelect.classList.toggle('hide');
+    // nameContainer.classList.toggle('hide');
+    // gameSelect.classList.toggle('hide');
     let name = document.getElementById('user-name');
        
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
