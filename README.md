@@ -1,108 +1,360 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<p align="center"><img src="#"></p>
 
-Welcome rockymiss,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Flip the Bird Game
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird. 
 
-## Gitpod Reminders
+Link to the deployed website is [here](#) 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Link to the repository is [here](#) 
 
-`python3 -m http.server`
+The Design has been focused to **Desktop** first and **Responsive**
 
-A blue button should appear to click: _Make Public_,
+![alt text](#) <!--mockup image here-->
 
-Another blue button should appear to click: _Open Browser_.
+-----
+## Who is this quiz for and what does it do? 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+-----
+## User Experience
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### From a User's Perspective
+As a user it is important: 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+### Users Fulfilment
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+-----
+## UX 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Strategy 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The game is created to 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The main aim is 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Scope  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Features are set up to be simple, welcoming and easy to use.  The main existing features are: 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Logo
+   
+    
+- Navigation
+    
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Footer Social Media Links 
+    
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Buttons
+    
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Structure Plane
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+There are ?? different pages on this website: 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Skeleton 
 
-------
+The design was focused to mobile first but can be used on larger devices.  Wireframes are done using balsamiq:  
 
-## FAQ about the uptime script
+##### Index
 
-**Why have you added this script?**
+![alt text](#)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+##### Recipe
 
-**How will this affect me?**
+![alt text](#)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+##### Sign-up
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![alt text](#)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+##### thank-you 
 
-**So….?**
+![alt text](#)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+### Surface  
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+##### Colors 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The following palette of colors were chosen as they were clean, welcoming and easy to read: 
 
-**Anything more?**
+<p align="center"><img src="#"></p><!--palette of colours image-->
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  
 
----
+##### Typography
 
-Happy coding!
+Logo - Orbitron, sans-serif - google fonts
+
+
+-----
+## Future Implementation 
+
+- 
+
+-----
+## Technologies Used 
+
+
+- HTML5 to provide content and structure to the website.
+- CSS3 provides styles for the website. 
+- [Coolors.co](https://coolors.co/) to select colors for the website that   would work well together.  
+- [Cloudinary.com](https://www.cloudinary.com/) to store images for the   website.
+- [Font Awesome](https://fontawesome.com) for the social media icons on the footer. 
+- [Google Fonts](https://fonts.google.com/) for font.
+- Gitpod to create and edit the website. 
+- GibHub for hosting files and deployment of the website.
+- Balsamiq to create wireframes.
+- 
+- [Canva.com](https://www.canva.com/) for bird image on cards  
+- [TinyPNG](https://tinypng.com/) - to compress images
+
+<details open>
+<summary>Tinypng image</summary>
+<br>
+<p align="center"><img src="#"></p><!--compressed photos-->
+
+</details>
+
+-----
+## Resources 
+
+
+- Code Institute course materials, tutor and mentor support.
+- Code Institute Slack Community.
+- Love Maths walk-through on Code Insitute.
+- [W3schools](https://www.w3schools.com/) 
+- [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  This video really gave me a better understanding of JavaScript.   
+-     
+
+-----
+## Testing
+
+
+### Local Testing
+
+Manual testing of all buttons, links, functionality and grammer on the website has been carried out.  The following was verified by manual testing: 
+
+- Navigation on all pages: 
+  - 
+- Footer on all pages: 
+  -   
+- etc
+  - 
+
+
+Note:    
+
+### User Testing
+
+The website was sent to a group of approximately 20 people, most of which were parents.  Users found the website very functional and easy to navigate.  Some devices used were as follows: 
+
+- Huawei P30
+- IPhone 7s
+- IPhone 11
+- Iphone 12 Pro max
+- Redmi note 9
+- Samsung A21.  
+
+This testing proved very helpful with responsivness errors etc 
+
+
+<center>**Error**</center>
+
+<p align="center"><img src="#"></p><!--error photos-->
+
+<center>**Fix**</center> 
+
+<p align="center"><img src="#"></p><!--error fixed photos-->
+
+### Browser Testing
+
+The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera.   On all browsers testing was as expected.  Functionality and responsiveness are good. 
+
+
+### Validators 
+
+The website was tested using Jigsaw W3C validation.   
+
+<details open>
+<summary>Validator Error</summary>
+<br>
+<p align="center"><img src="#"></p><!--validator photos-->
+
+</details>
+
+
+<details open>
+<summary>Validator Clear</summary>
+<br>
+<p align="center"><img src="#"></p><!--validator clear photos-->
+
+</details>
+<br>
+
+### Responsiveness 
+
+To check responsiveness I used Google Chrome Dev Tools.  Desktop, Mobile and tablet sizes were tested.  The website responded well.   
+<br>
+
+###  Result: Chrome Lighthouse 
+
+
+<details open>
+<summary>Lighthouse desktop report preview</summary>
+<br>
+
+<p align="center"><img src="#"></p><!--lighthouse desktop photos-->
+
+</details>
+<br>
+
+<details open>
+<summary>Lighthouse mobile report preview</summary>
+<br>
+
+<p align="center"><img src="#"></p><!--Lighthouse mobile photos-->
+
+</details>
+<br>
+
+When using Chrome lighthouse an error occured because 
+
+<details open>
+<summary>Lighthouse error preview</summary>
+<p align="center"><img src="#"></p> <!--lighthouse error photos-->
+
+</details>
+<br>
+
+
+### Result: Webpagetest
+
+I carried out a test using [webpagetest.org](https://webpagetest.org/) 
+
+<details open>
+<summary>Webpage Test Preview</summary><!--webpage test photos-->
+<p align="center"><img src="#"></p>
+</details>
+<br>
+
+### Color Contrast Testing 
+
+I used [a11y](https://https://color.a11y.com/) to test the color contrast on the website which produced no issues. 
+<details open>
+<summary>Color Contrast Results Preview</summary> 
+<p align="center"><img src=""></p><!--Color contrast photos-->
+
+</details>
+<br>
+
+### Issues/Bugs Fixed 
+
+
+### Issues Unresolved
+
+
+
+<details open>
+<summary>Issue images</summary>
+<p align="center"><img src="#"></p>
+</details>
+<br>
+
+-----
+## Version Control
+
+
+### Git and GitHub 
+
+Local repository and IDE used: GitPod
+Remote repository used: GitHub
+
+Steps followed: 
+- I created a new public repository on GitHub using the Code Institute template.
+- I then created a workspace and started coding on GitPod. 
+- Pages were created along with assets folders and css style file. 
+- As I worked I previewed changes using ports to open the browser.
+- To save my work safely I continued to use the terminal consistently by using: 
+    - **git add .** to add work to git
+    - **git commit -m""** to commit the work 
+    - **git push** to update work to GitHub 
+
+
+### Deployment 
+
+
+  #### Deployment: 
+        
+    To deploy the site to Github pages the following steps should be followed: 
+
+    - From your list of repositories select the repository you want to deploy.
+    - Click on settings. 
+    - Scroll down to GitHub pages and open Github pages. 
+    - Select main branch and click save.
+    - The page should automatically refresh and the deployed link is provided.
+
+<details open>
+<summary>Deployment Preview Image</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1642789616/kitchen-nippers/deployed-site_fgqlhc.png"></p>
+
+</details>
+    
+
+  #### Fork: 
+        
+    A copy can be made of a repository by forking the repository.  The copy can then be viewed and changed without affecting the original repository. 
+    
+      - From your list of repositories select the repository you want to fork.
+      - On the top of the page to the right had side you will see a fork image.  Click on the button to create a copy. 
+
+      
+  <details open>
+<summary>Fork Preview Image</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1642789173/kitchen-nippers/fork-preview_xraeo2.png"></p>
+
+</details>
+
+
+  #### Clone: 
+        
+    Cloning this project from GitHub can be done by following these steps: 
+    
+      - From your list of repositories select the repository you want to deploy.
+      - Click on the code tabe. 
+      - Click on the clipboard icon to copy the URL.  
+      - Open Git Bash in your IDE. 
+      - Change the current working directory to the location you want to place the clone. 
+      - Type git clone and paste the copied URL.  
+      - Press enter for the clone to be created. .
+
+  <details open>
+<summary>Clone Preview Image</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1642790166/kitchen-nippers/clone-preview_kkvsfx.png"></p>
+
+</details>
+<br>
+
+
+-----
+## Acknowledegments
+
+The website could not be completed without the help and support from 
+ the Slack Community, my cohort facilitator Kasia and msletb class.  
+
+Rachel Rock March 2022

@@ -16,5 +16,7 @@ function getFormDetails(event) {
    
 }
 
+
+
 let getUserDetails = document.getElementById('name-form');
 getUserDetails.addEventListener('submit', getFormDetails);
