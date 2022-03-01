@@ -15,25 +15,26 @@
             <h1>Flip the Bird</h1>
         </header>
         <main>
-        <div class="details-container">
+        <div class="details-container hide" id="details-container">
             <span class="score">0</span>
             <span class="timer">0.00</span>
             <span class="flips">0 Flips Left</span>
         </div>
-        <div class="name-container">
+        <div class="name-container" id="name-container">
         <h2>Enter Your Name</h2>
-        <form>
-            <div>
-            <input type="text" id="name-input">
+
+        <form id="name-form">
+            <div class="name">
+               <input id="user-name" type="text" name="name" required>
             </div>
-            <div>
-            <button class="global-btn name-button" type="submit">Submit
-            </button>
-        </div>
-        </div>
-    </form>
-        <div class="game-select-container ">
             
+            <input type="submit">
+        </form>
+        </div>
+
+      
+        <div class="game-select-container hide" id="game-select-container">
+            <h3 id="name-result"></h3>
             <button class="global-btn image-btn" type="submit">Images
             </button>
             <button class="global-btn music-btn" type="submit">Music
@@ -42,9 +43,9 @@
             </button>
         </div>
     
-        <div class="quiz-container-images"></div>
-        <div class="quiz-container-music"></div>
-        <div class="quiz-container-numbers"></div>
+        <div class="quiz-container-images" id="quiz-container-images"></div>
+        <div class="quiz-container-music" id="quiz-container-music"></div>
+        <div class="quiz-container-shapes" id="quiz-container-shapes"></div>
     </main>
     
     <script src="/assets/js/script.js"></script>
