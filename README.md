@@ -137,7 +137,29 @@ Logo - Orbitron, sans-serif - google fonts
 - Love Maths walk-through on Code Insitute.
 - [W3schools](https://www.w3schools.com/) 
 - [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  This video really gave me a better understanding of JavaScript.   
--     
+
+### Images
+
+#### Birds
+Photo by Michelle Reeves from Pexels - puffins
+Photo by mark broadhurst from Pexels - colourful bird
+Photo by chris clark from Pexels - crested lark
+Photo by Jos van Ouwerkerk from Pexels - blue head
+Photo by Cristina Andrea Alvarez Cruz from Pexels - hummingbird
+Photo by nkk from Pexels - in your face parrot
+Photo by Jad El Mourad from Pexels - red bird
+Photo by Jean van der Meulen from Pexels - Peacock
+
+
+#### Shapes
+Photo by byMALENS from Pexels - blue hexagon
+Photo by Miscellaneous Background from Pexels - Pink and grey star
+Photo by Thomas Plets from Pexels - flower
+Photo by Elīna Arāja from Pexels - circle
+Photo by Oleg Magni from Pexels - bowl
+Photo by The glorious studio from Pexels heart
+Photo by rotekirsche 20 from Pexels - tiles
+Photo by Gleb Vasylynka from Pexels - triangle     
 
 -----
 ## Testing
