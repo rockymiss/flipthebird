@@ -1,3 +1,7 @@
+//execute JS code after page is loaded
+document.addEventListener("DOMContentLoaded", function(){
+});
+
 const detailsContainer = document.getElementById('details-container');
 const nameContainer = document.getElementById('name-container');
 const gameSelect = document.getElementById('game-select-container')
@@ -58,6 +62,10 @@ const cardGenerator = () => {
     section.appendChild(cardElement);
     cardElement.appendChild(cardFace);
     cardElement.appendChild(cardBack);
+
+    cardElement.addEventListener('click', (e) => {
+        cardElement.classList.toggle("toggle-cards");
+    })
     });   
 };
 
