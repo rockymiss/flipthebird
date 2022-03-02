@@ -69,6 +69,9 @@ const cardGenerator = () => {
     });   
 };
 
+
+
+
 cardGenerator();
 
 

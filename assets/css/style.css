@@ -15,17 +15,15 @@ body {
     align-items: center;
     flex-direction: column;      
 }
-
+/*styles for section created from js cardGenerator()*/
 section {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(4, 8rem);
   grid-gap: 2rem;
   perspective: 500px;
- 
-  
 }
-
+/*Styles on cards*/
 .card {
   position: relative;
   transform-style: preserve-3d;
@@ -50,11 +48,30 @@ section {
   transform: rotateY(190deg);
 }
 
-
-
+/*style to hide and display game sections*/
 .hide {
     display: none;
   }
+
+/*Responsiveness Settings*/
+
+/* for medium screen sizes from 1200px wide and down
+@media screen and (max-width: 1000px) {
+  .{}
+
+  /* for medium screen sizes from 992px wide and down */
+/* @media screen and (max-width: 992px) {
+  .{} */
+
+  /* for medium screen sizes from 768px wide and down */
+/* @media screen and (max-width: 768px) {
+  .{} */
+
+  /* for medium screen sizes from 576px wide and down */
+/* @media screen and (max-width: 576px) {
+  .{} */ 
+
+
   
   
   
