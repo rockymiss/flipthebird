@@ -7,8 +7,8 @@ const imagesQuiz = document.getElementById('quiz-container-images');
 
 function getFormDetails(event) {
     event.preventDefault();
-    // nameContainer.classList.toggle('hide');
-    // gameSelect.classList.toggle('hide');
+    // nameContainer.classList.add('hide');
+    // gameSelect.classList.add('hide');
     let name = document.getElementById('user-name');
        
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
@@ -32,7 +32,7 @@ countLives.textContent = `${setLives} flips left`;
 
 // //function to make the cards run randomingly
 const randomCards = () => {
-    const cardInfo = getImageData();
+    const cardInfo = [...getImageData(), ...getImageData2()];
     cardInfo.sort(() => Math.random() - 0.5);
     return cardInfo;
 };
