@@ -31,6 +31,18 @@ body {
   justify-items: center;
 }
 
+.global-btn {
+  width: 20%;
+  padding: 0 5rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  background-color: #efb0a1;
+  font-size: 1rem;
+  color: #54494b;
+}
+
+
+
 /*styles for section created from js cardGenerator()*/
 section {
   display: grid;
