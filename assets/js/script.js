@@ -106,7 +106,7 @@ const matchCards = (e) => {
             }
         }
     }  
-   //if game is won
+   //if user wins game
    if(toggleCard.length === 16){
        restartGame('we won');
    } 
