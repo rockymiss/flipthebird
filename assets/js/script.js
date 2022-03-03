@@ -36,7 +36,7 @@ countLives.textContent = `${setLives} flips left`;
 
 // //function to make the cards run randomingly
 const randomCards = () => {
-    const cardInfo = [...getImageData(), ...getImageData2()];
+    const cardInfo = getImageData();
     cardInfo.sort(() => Math.random() - 0.5);
     return cardInfo;
 };
@@ -79,40 +79,49 @@ const matchCards = (e) => {
     const cardClicked = e.target;
     cardClicked.classList.add('flipped-card');
     const flippedCards = document.querySelectorAll('.flipped-card');
+    const toggleCard = document.querySelectorAll('toggle-cards');
         if (flippedCards.length === 2) {
-        if(flippedCards[0].getAttribute('name') === flippedCards[1].getAttribute('name')
+        if(
+            flippedCards[0].getAttribute('name') === 
+            flippedCards[1].getAttribute('name')
         ) {
-            console.log('match');
-            flippedCards.forEach((card) => {
+                flippedCards.forEach((card) => {
                 card.classList.remove('flipped-card');
                 card.style.pointerEvents = "none";
             });
         } else {
-            console.log('wrong');
-            flippedCards.forEach(card => {
+                flippedCards.forEach(card => {
                 card.classList.remove('flipped-card');
                 setTimeout(() => card.classList.remove('toggle-cards'), 1200);
             });
             setLives--;
             countLives.textContent = setLives;
             if(setLives === 0) {
-                restartGame();
+                restartGame("Try again");
             }
         }
     }     
 };
 //Restart Game 
-    const restartGame = () => {
+    const restartGame = (text) => {
         let cardInfo = randomCards();
         let cardFaces = document.querySelectorAll('.face-card')
         let cards = document.querySelectorAll('.card');
+        section.style.pointerEvents = 'none';
         cardInfo.forEach((item,index) => {
             cards[index].classList.remove('toggle-cards');
+          setTimeout(() => {
             cards[index].style.pointerEvents = "all";
             cardFaces[index].src = item.imgSrc;
+            cards[index].setAttribute('name', item.name);
+            section.style.pointerEvents ='all';
+          
+          
+          }, 100)  
         })
         setLives = 8;
         countLives.textContent = setLives;
+        setTimeout(() => window.alert(text), 100);
     }
 
 
