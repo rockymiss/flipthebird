@@ -57,7 +57,8 @@ const cardGenerator = () => {
     //attach face to card 
     cardFace.src = item.imgSrc;
     //give card a name attribute to match cards
-    cardElement.setAttribute('name', item.name);    
+    cardElement.setAttribute('name', item.name);
+    cardFace.setAttribute('alt', item.name);
     //attach cards to section
     section.appendChild(cardElement);
     cardElement.appendChild(cardFace);
