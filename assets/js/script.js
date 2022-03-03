@@ -79,29 +79,39 @@ const matchCards = (e) => {
     const cardClicked = e.target;
     cardClicked.classList.add('flipped-card');
     const flippedCards = document.querySelectorAll('.flipped-card');
-    const toggleCard = document.querySelectorAll('toggle-cards');
+    const toggleCard = document.querySelectorAll('.toggle-cards');
         if (flippedCards.length === 2) {
         if(
             flippedCards[0].getAttribute('name') === 
             flippedCards[1].getAttribute('name')
         ) {
+            console.log('match');
+            //match
                 flippedCards.forEach((card) => {
                 card.classList.remove('flipped-card');
                 card.style.pointerEvents = "none";
             });
         } else {
-                flippedCards.forEach(card => {
+            console.log('wrong');
+            // wrong
+                flippedCards.forEach((card) => {
                 card.classList.remove('flipped-card');
-                setTimeout(() => card.classList.remove('toggle-cards'), 1200);
+                setTimeout(() => card.classList.remove('toggle-cards'), 1000);
             });
+            //player lives
             setLives--;
             countLives.textContent = setLives;
             if(setLives === 0) {
-                restartGame("Try again");
+                restartGame('try again');
             }
         }
-    }     
+    }  
+   //if game is won
+   if(toggleCard.length === 16){
+       restartGame('we won');
+   } 
 };
+
 //Restart Game 
     const restartGame = (text) => {
         let cardInfo = randomCards();
@@ -113,12 +123,10 @@ const matchCards = (e) => {
           setTimeout(() => {
             cards[index].style.pointerEvents = "all";
             cardFaces[index].src = item.imgSrc;
-            cards[index].setAttribute('name', item.name);
+            cards[index].setAttribute('name', item.name);//sets name back too
             section.style.pointerEvents ='all';
-          
-          
-          }, 100)  
-        })
+          }, 1000)  
+        });
         setLives = 8;
         countLives.textContent = setLives;
         setTimeout(() => window.alert(text), 100);
