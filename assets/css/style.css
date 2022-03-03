@@ -27,6 +27,7 @@ body {
   padding: 2rem;
   border-radius: 10px;
   display: grid;
+  margin-top: 4rem;
 }
 
 .game-select-container {
@@ -50,6 +51,11 @@ span {
 #user-name {
   border-radius: 5px;
   font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+input {
+  text-align: center;
 }
 
 *:focus {
@@ -67,8 +73,11 @@ h2 {
   color: #efb0a1;
 }
 
-
-
+h3 {
+  font-size: 1.5rem;
+  color: #efb0a1;
+  margin-bottom: 2rem;
+}
 
 
 /*styles for section created from js cardGenerator()*/
