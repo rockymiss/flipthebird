@@ -16,7 +16,9 @@ body {
     flex-direction: column;      
 }
 /*Styles on Name and Game containers*/
-
+.details-container {
+  text-align: justify;
+}
 .name-container,
 .game-select-container {
   width: 60%;
@@ -31,15 +33,41 @@ body {
   justify-items: center;
 }
 
+span {
+  padding: 0 5rem;
+}
+
+/*buttons*/
 .global-btn {
   width: 20%;
-  padding: 0 5rem;
+  padding: 0.5rem;
   border-radius: 5px;
   margin: 0.5rem;
   background-color: #efb0a1;
   font-size: 1rem;
   color: #54494b;
 }
+#user-name {
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*headings*/
+h1 {
+  font-size: 9rem;
+  color: #efb0a1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #efb0a1;
+}
+
+
 
 
 
