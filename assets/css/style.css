@@ -15,6 +15,22 @@ body {
     align-items: center;
     flex-direction: column;      
 }
+/*Styles on Name and Game containers*/
+
+.name-container,
+.game-select-container {
+  width: 60%;
+  background-color: #54494b;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  display: grid;
+}
+
+.game-select-container {
+  justify-items: center;
+}
+
 /*styles for section created from js cardGenerator()*/
 section {
   display: grid;
@@ -53,6 +69,8 @@ section {
 .hide {
     display: none;
   }
+
+
 
 /*Responsiveness Settings*/
 
