@@ -20,9 +20,9 @@ countLives.textContent = `${setLives} flips left`;
 
 function getFormDetails(event) {
     event.preventDefault();
-    // nameContainer.classList.add('hide');
-    // gameSelect.classList.add('hide');
-    let name = document.getElementById('user-name');      
+    let name = document.getElementById('user-name');
+    nameContainer.classList.add('hide');   
+    gameSelect.classList.remove('hide');  
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
 }
 
@@ -74,7 +74,7 @@ const cardGenerator = () => {
 /**
  * function to check the cards match when clicked the event(e) will
  * capture data
- * and the target is the element that was clicked} e 
+ * and the target is the element that was clicked 
  */
 const matchCards = (e) => {
     const cardClicked = e.target;
