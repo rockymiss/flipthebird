@@ -7,23 +7,9 @@ const nameContainer = document.getElementById('name-container');
 const gameSelect = document.getElementById('game-select-container')
 const imagesQuiz = document.getElementById('quiz-container-images');
 
-
-
-function getFormDetails(event) {
-    event.preventDefault();
-    // nameContainer.classList.add('hide');
-    // gameSelect.classList.add('hide');
-    let name = document.getElementById('user-name');
-       
-    document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
-   
-}
-
 let getUserDetails = document.getElementById('name-form');
 getUserDetails.addEventListener('submit', getFormDetails);
 
-
-//Game 
 // variables to get parts of the document needed.
 const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
@@ -32,16 +18,28 @@ let setLives = 8;
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
 
+function getFormDetails(event) {
+    event.preventDefault();
+    // nameContainer.classList.add('hide');
+    // gameSelect.classList.add('hide');
+    let name = document.getElementById('user-name');      
+    document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
+}
 
 
-// //function to make the cards run randomingly
+/**
+ * 
+ * function to make the cards run randomingly
+ */
 const randomCards = () => {
     const cardInfo = getImageData();
     cardInfo.sort(() => Math.random() - 0.5);
     return cardInfo;
 };
 
-//Place cards into the html
+/**
+ * Place cards into the html
+ */
 
 const cardGenerator = () => {
     const cardInfo = randomCards();
@@ -72,9 +70,11 @@ const cardGenerator = () => {
     });   
 };
 
-//function to check the cards match
-// when clicked the event(e) will capture data
-//and the target is the element that was clicked
+/**
+ * function to check the cards match when clicked the event(e) will
+ * capture data
+ * and the target is the element that was clicked} e 
+ */
 const matchCards = (e) => {
     const cardClicked = e.target;
     cardClicked.classList.add('flipped-card');
@@ -108,11 +108,15 @@ const matchCards = (e) => {
     }  
    //if user wins game
    if(toggleCard.length === 16){
-       restartGame('we won');
+       setTimeout(() => {
+           restartGame('we won');
+       }, 1000)
    } 
 };
 
-//Restart Game 
+/**
+ * Restarts Game 
+ */ 
     const restartGame = (text) => {
         let cardInfo = randomCards();
         let cardFaces = document.querySelectorAll('.face-card')
@@ -129,7 +133,7 @@ const matchCards = (e) => {
         });
         setLives = 8;
         countLives.textContent = setLives;
-        setTimeout(() => window.alert(text), 100);
+        setTimeout(() => window.alert(text), 1000);
     }
 
 
