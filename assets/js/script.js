@@ -6,17 +6,16 @@ const detailsContainer = document.getElementById('details-container');
 const nameContainer = document.getElementById('name-container');
 const gameSelect = document.getElementById('game-select-container')
 const imagesQuiz = document.getElementById('quiz-container-images');
-
-let getUserDetails = document.getElementById('name-form');
-getUserDetails.addEventListener('submit', getFormDetails);
-
-// variables to get parts of the document needed.
 const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
 let setLives = 8;
+let getUserDetails = document.getElementById('name-form');
+
+getUserDetails.addEventListener('submit', getFormDetails);
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
+
 
 function getFormDetails(event) {
     event.preventDefault();
