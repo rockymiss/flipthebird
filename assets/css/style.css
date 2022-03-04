@@ -18,6 +18,7 @@ body {
 /*Styles on Name and Game containers*/
 .details-container {
   text-align: justify;
+  padding: 2rem 0;
 }
 .welcome-container,
 .game-select-container {
@@ -97,6 +98,11 @@ li {
   margin-left: 0.6 rem;
   list-style: none;
   
+}
+
+.birdhouse {
+  width: 20%;
+  height: 20%;
 }
 
 

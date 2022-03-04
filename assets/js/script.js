@@ -15,6 +15,7 @@ const getUserDetails = document.getElementById('name-form');
 const playBirdGame = document.getElementById('bird-btn');
 
 
+
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
 playBirdGame.addEventListener('click', startBirdGame);
@@ -42,14 +43,14 @@ countLives.textContent = `${setLives} flips left`;
  * Function to close game selection and start game
  */
 
+
+
  function startBirdGame(event) {
     event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
-    detailsContainer.classList.remove('hide');
-    
+    detailsContainer.classList.remove('hide');    
 }
-
 
 /**
  * 
@@ -103,6 +104,7 @@ countLives.textContent = `${setLives} flips left`;
 const matchCards = (e) => {
     const cardClicked = e.target;
     cardClicked.classList.add('flipped-card');
+    
     const flippedCards = document.querySelectorAll('.flipped-card');
     const toggleCard = document.querySelectorAll('.toggle-cards');
         if (flippedCards.length === 2) {
