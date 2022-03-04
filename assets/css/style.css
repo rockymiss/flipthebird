@@ -19,7 +19,7 @@ body {
 .details-container {
   text-align: justify;
 }
-.name-container,
+.welcome-container,
 .game-select-container {
   width: 60%;
   background-color: #54494b;
@@ -73,10 +73,29 @@ label {
   color: #efb0a1;
 }
 
-h2 {
-  font-size: 1.5rem;
+h2, h4 {
+  font-size: 2rem;
   color: #efb0a1;
   margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #efb0a1;
+}
+
+ol {
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+  color: #efb0a1;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+li {
+  margin-left: 1rem;
+  text-indent: -2.5rem;
 }
 
 

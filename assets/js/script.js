@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 //variables
 const detailsContainer = document.getElementById('details-container');
-const nameContainer = document.getElementById('name-container');
+const welcomeContainer = document.getElementById('welcome-container');
 const gameSelect = document.getElementById('game-select-container')
 const imagesQuiz = document.getElementById('quiz-container-images');
 const section = document.querySelector('section');
@@ -31,7 +31,7 @@ countLives.textContent = `${setLives} flips left`;
  function getFormDetails(event) {
     event.preventDefault();
     let name = document.getElementById('user-name');
-    nameContainer.classList.add('hide');   
+    welcomeContainer.classList.add('hide');   
     gameSelect.classList.remove('hide');  
     detailsContainer.classList.add('hide');
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;

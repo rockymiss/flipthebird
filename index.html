@@ -19,19 +19,33 @@
             <span id="timer">0.00</span>
             <span id="flips">0 Flips Left</span>
         </div>
-        <div class="name-container" id="name-container">
-        <form id="name-form">
+        <div class="welcome-container" id="welcome-container">
+        <h2>Welcome to Flip the Bird</h2>
+        <h3>Rules</h3>
+        <ol>
+            <li>It's simple really!</li>
+        <li>Enter your Name below to start.</li>
+        <li>Flip the cards and try to match the birds.</li>
+        <li>To win match all of the cards</li>
+        <li>You have 8 lives to complete the game</li>
+        <li>When you are done, play again!</li>
+        <li>If you want to quit, click the home button</li>
+
+        </ol>
+      
+        
+            <form id="name-form">
             <div class="name">
-                <label for="user-name">Enter your name to begin</label><br>
+                <label for="user-name"></label><br>
                 <input id="user-name" type="text" placeholder="Name" name="name" required>
             </div>
             
-            <input type="submit" value="submit" class="global-btn">
+            <input type="submit" value="BEGIN" class="global-btn">
         </form>
         </div>
       
         <div class="game-select-container hide" id="game-select-container">
-            <h2 id="name-result">0</h2>
+            <h4 id="name-result">0</h4>
             <button class="global-btn" id="bird-btn" type="submit">Birds
             </button>
         </div>
