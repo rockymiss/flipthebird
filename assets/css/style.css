@@ -94,8 +94,9 @@ ol {
 }
 
 li {
-  margin-left: 1rem;
-  text-indent: -2.5rem;
+  margin-left: 0.6 rem;
+  list-style: none;
+  
 }
 
 
