@@ -12,7 +12,7 @@ let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
 const birdGame = document.getElementById('bird-btn');
 const soundGame = document.getElementById('sound-btn');
-const featherGame = document.getElementById('feather-btn');
+const featherGame = documnet.getElementById('feather-btn');
 
 
 
@@ -20,8 +20,6 @@ const featherGame = document.getElementById('feather-btn');
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
 birdGame.addEventListener('click', startBirdGame);
-// soundGame.addEventListener('click', startAudioGame);
-// featherGame.addEventListener('click', startFeatherGame);
 
 
 //Link flip lives variable to dom and set to setlives 
