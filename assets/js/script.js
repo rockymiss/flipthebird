@@ -12,14 +12,17 @@ let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
 const birdGame = document.getElementById('bird-btn');
 const soundGame = document.getElementById('sound-btn');
-const featherGame = documnet.getElementById('feather-btn');
+const featherGame = document.getElementById('feather-btn');
+let randomData;
 
 
 
 
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
-birdGame.addEventListener('click', startBirdGame);
+birdGame.addEventListener('click', chooseData);
+soundGame.addEventListener('click', chooseData);
+featherGame.addEventListener('click', chooseData);
 
 
 //Link flip lives variable to dom and set to setlives 
@@ -44,31 +47,45 @@ function getFormDetails(event) {
  * Function to close game selection and start game
  */
 
-function startBirdGame(event) {
-    event.preventDefault();
+function chooseData(event) {
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');
-    
+    let target = event.target;
+    if (target.id === 'bird-btn') {
+        randmonData = getImageData.sort(() => Math.random() - 0.5);
+    } else if(target.id === 'sound-btn') {
+        randmonData = getAudioData.sort(() => Math.random() - 0.5);
+    } else if(target.id === 'feather-btn') {
+        randomData = getFeatherData.sort(() => Math.random() - 0.5);
+    }
 }
+
+// function startBirdGame(event) {
+//     event.preventDefault();
+//     gameSelect.classList.add('hide');
+//     section.classList.remove('hide');
+//     detailsContainer.classList.remove('hide');
+    
+// }
 
 
 /**
  * 
  * function to make the cards run randomingly
  */
-const randomCards = () => {
-    const cardInfo = getImageData();
-    cardInfo.sort(() => Math.random() - 0.5);
-    return cardInfo;
-};
+// const randomCards = () => {
+//     const cardInfo = getImageData();
+//     cardInfo.sort(() => Math.random() - 0.5);
+//     return cardInfo;
+// };
 
 /**
  * Place cards into the html
  */
 
 const cardGenerator = () => {
-    const cardInfo = randomCards();
+    const cardInfo = randomData;
     //generate 16 cards
    
     cardInfo.forEach((item) => {
