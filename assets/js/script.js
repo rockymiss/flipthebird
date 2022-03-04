@@ -1,3 +1,5 @@
+/* jshint esversion: 8, jquery: true */
+
 //execute JS code after page is loaded
 document.addEventListener("DOMContentLoaded", function(){
 });
@@ -10,19 +12,12 @@ const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
 let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
-const birdGame = document.getElementById('bird-btn');
-const soundGame = document.getElementById('sound-btn');
-const featherGame = document.getElementById('feather-btn');
-let randomData;
-
-
+const playBirdGame = document.getElementById('bird-btn');
 
 
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
-birdGame.addEventListener('click', chooseData);
-soundGame.addEventListener('click', chooseData);
-featherGame.addEventListener('click', chooseData);
+playBirdGame.addEventListener('click', startBirdGame);
 
 
 //Link flip lives variable to dom and set to setlives 
@@ -33,7 +28,7 @@ countLives.textContent = `${setLives} flips left`;
  * Function to get username, hide input and 
  * display game choices 
  */
-function getFormDetails(event) {
+ function getFormDetails(event) {
     event.preventDefault();
     let name = document.getElementById('user-name');
     nameContainer.classList.add('hide');   
@@ -47,45 +42,31 @@ function getFormDetails(event) {
  * Function to close game selection and start game
  */
 
-function chooseData(event) {
+ function startBirdGame(event) {
+    event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');
-    let target = event.target;
-    if (target.id === 'bird-btn') {
-        randmonData = getImageData.sort(() => Math.random() - 0.5);
-    } else if(target.id === 'sound-btn') {
-        randmonData = getAudioData.sort(() => Math.random() - 0.5);
-    } else if(target.id === 'feather-btn') {
-        randomData = getFeatherData.sort(() => Math.random() - 0.5);
-    }
-}
-
-// function startBirdGame(event) {
-//     event.preventDefault();
-//     gameSelect.classList.add('hide');
-//     section.classList.remove('hide');
-//     detailsContainer.classList.remove('hide');
     
-// }
+}
 
 
 /**
  * 
  * function to make the cards run randomingly
  */
-// const randomCards = () => {
-//     const cardInfo = getImageData();
-//     cardInfo.sort(() => Math.random() - 0.5);
-//     return cardInfo;
-// };
+ const randomCards = () => {
+    const cardInfo = getImageData();
+    cardInfo.sort(() => Math.random() - 0.5);
+    return cardInfo;
+};
 
 /**
  * Place cards into the html
  */
 
-const cardGenerator = () => {
-    const cardInfo = randomData;
+ const cardGenerator = () => {
+    const cardInfo = randomCards();
     //generate 16 cards
    
     cardInfo.forEach((item) => {
