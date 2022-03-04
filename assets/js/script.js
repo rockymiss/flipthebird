@@ -1,7 +1,7 @@
 //execute JS code after page is loaded
 document.addEventListener("DOMContentLoaded", function(){
 });
-
+//variables
 const detailsContainer = document.getElementById('details-container');
 const nameContainer = document.getElementById('name-container');
 const gameSelect = document.getElementById('game-select-container')
@@ -9,22 +9,46 @@ const imagesQuiz = document.getElementById('quiz-container-images');
 const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
 let setLives = 8;
-let getUserDetails = document.getElementById('name-form');
+const getUserDetails = document.getElementById('name-form');
+const playBirdGame = document.getElementById('bird-btn');
 
+
+
+//Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
+playBirdGame.addEventListener('click', startBirdGame);
+
+
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
 
-
+/**
+ * 
+ * Function to get username, hide input and 
+ * display game choices 
+ */
 function getFormDetails(event) {
     event.preventDefault();
     let name = document.getElementById('user-name');
     nameContainer.classList.add('hide');   
     gameSelect.classList.remove('hide');  
+    detailsContainer.classList.add('hide');
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
 }
 
+/**
+ * 
+ * Function to close game selection and start game
+ */
+
+function startBirdGame(event) {
+    event.preventDefault();
+    gameSelect.classList.add('hide');
+    section.classList.remove('hide');
+    detailsContainer.classList.remove('hide');
+    
+}
 
 /**
  * 
