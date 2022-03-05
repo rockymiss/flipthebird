@@ -16,9 +16,8 @@ const playBirdGame = document.getElementById('bird-btn');
 const playAudioGame = document.getElementById('sound-btn');
 const playFeatherGame = document.getElementById('feather-btn');
 const choiceReturn = document.getElementById('game-choice');
-const playAgain = document.getElementById('play-again');
+const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
-const hardLuckContainer = document.getElementById('hard-luck');
 let startTime = 30;
 
 
@@ -29,7 +28,7 @@ playBirdGame.addEventListener('click', startBirdGame);
 playAudioGame.addEventListener('click', startBirdGame);
 playFeatherGame.addEventListener('click', startBirdGame);
 choiceReturn.addEventListener('click', returnToChoice);
-playAgain.addEventListener('click', returnToChoice);
+playGameAgain.addEventListener('click', playAgain);
 
 
 //Link flip lives variable to dom and set to setlives 
@@ -38,21 +37,26 @@ countLives.textContent = `${setLives} flips left`;
 function showCongrats () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
-    document.getElementById('h4').textContent = `Congratulations you won!`;
+    document.getElementById('result').textContent = `Congratulations you won!`;
     restartGame();
 }
 
 function showHardLuck () {
     section.classList.add('hide');
-    hardLuckContainer.classList.remove('hide');
-    document.getElementById('h4').textContent = `Sorry you lost!`;
+    congratsContainer.classList.remove('hide');
+    document.getElementById('result').textContent = `Sorry you lost!`;
     restartGame();
     
 }
 
 function returnToChoice () {
-    hardLuckContainer.classList.add('hide');
+    congratsContainer.classList.add('hide');
     gameSelect.classList.remove('hide');
+}
+
+function playAgain () {
+    congratsContainer.classList.add('hide');
+    section.classList.remove('hide');
 }
 
 /**
