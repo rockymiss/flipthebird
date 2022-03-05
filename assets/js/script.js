@@ -13,6 +13,8 @@ let countLives = document.getElementById('flips');
 let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
 const playBirdGame = document.getElementById('bird-btn');
+const playAudioGame = document.getElementById('sound-btn');
+const playFeatherGame = document.getElementById('feather-btn');
 let startTime = 30;
 
 
@@ -20,6 +22,8 @@ let startTime = 30;
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
 playBirdGame.addEventListener('click', startBirdGame);
+playAudioGame.addEventListener('click', startBirdGame);
+playFeatherGame.addEventListener('click', startBirdGame);
 
 
 //Link flip lives variable to dom and set to setlives 
