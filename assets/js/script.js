@@ -13,6 +13,7 @@ let countLives = document.getElementById('flips');
 let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
 const playBirdGame = document.getElementById('bird-btn');
+let startTime = 10;
 
 
 
@@ -24,13 +25,30 @@ playBirdGame.addEventListener('click', startBirdGame);
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
 
+// timer function
+function countDown() {
+    document.getElementById('timer').innerHTML = startTime;
+    if (startTime > 0) {
+        (startTime = startTime - 1)
+    } else if (startTime === 0) {
+        // what happens when timer ends
+        alert('You lost');
+        time = 0;
+    }
+    // overlay text at the end of the game if player matches all the cards
+    else {
+        alert('you won');
+    }
+}
+setInterval("countDown()", 1000);
+
 /**
  * 
  * Function to get username, hide input and 
  * display game choices 
  */
  function getFormDetails(event) {
-    event.preventDefault();
+    event.preventDefault();//prevents the page from reloading after submit
     let name = document.getElementById('user-name');
     welcomeContainer.classList.add('hide');   
     gameSelect.classList.remove('hide');  
@@ -42,7 +60,6 @@ countLives.textContent = `${setLives} flips left`;
  * 
  * Function to close game selection and start game
  */
-
 
 
  function startBirdGame(event) {
