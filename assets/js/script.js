@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 //variables
 const detailsContainer = document.getElementById('details-container');
 const welcomeContainer = document.getElementById('welcome-container');
-const gameSelect = document.getElementById('game-select-container')
+const gameSelect = document.getElementById('game-select-container');
 const imagesQuiz = document.getElementById('quiz-container-images');
 const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
@@ -126,7 +126,7 @@ function playAgain () {
     cardElement.addEventListener('click', (e) => {
         cardElement.classList.toggle("toggle-cards");
         matchCards(e);
-    })
+    });
     });   
 };
 
@@ -172,7 +172,7 @@ const matchCards = (e) => {
    if(toggleCard.length === 16){
        setTimeout(() => {
            showCongrats();
-       }, 1000)
+       }, 1000);
    } 
 };
 
@@ -181,7 +181,7 @@ const matchCards = (e) => {
  */ 
     const restartGame = (text) => {
         let cardInfo = randomCards();
-        let cardFaces = document.querySelectorAll('.face-card')
+        let cardFaces = document.querySelectorAll('.face-card');
         let cards = document.querySelectorAll('.card');
         section.style.pointerEvents = 'none';
         cardInfo.forEach((item,index) => {
@@ -191,12 +191,12 @@ const matchCards = (e) => {
             cardFaces[index].src = item.imgSrc;
             cards[index].setAttribute('name', item.name);//sets name back too
             section.style.pointerEvents ='all';
-          }, 1000)  
+          }, 1000);  
         });
         setLives = 8;
         countLives.textContent = setLives;
         setTimeout(() => window.alert(text), 1000);
-    }
+    };
 
 
 cardGenerator();
