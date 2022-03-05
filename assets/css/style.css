@@ -35,13 +35,25 @@ body {
   justify-items: center;
 }
 
+div#congrats,
+div#hard-luck {
+  width: 60%;
+  background-color: #54494b;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+
+
 span {
   padding: 0 5rem;
 }
 
 /*buttons*/
 .global-btn {
-  width: 20%;
+  width: auto;
   padding: 0.5rem;
   border-radius: 5px;
   margin: 0.5rem;
@@ -74,7 +86,7 @@ label {
   color: #efb0a1;
 }
 
-h2, h4 {
+h2, h4, h5 {
   font-size: 2rem;
   color: #efb0a1;
   margin-bottom: 2rem;
