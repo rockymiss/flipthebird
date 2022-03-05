@@ -21,7 +21,9 @@ body {
   padding: 2rem 0;
 }
 .welcome-container,
-.game-select-container {
+.game-select-container,
+div#hard-luck,
+div#congrats {
   width: 60%;
   background-color: #54494b;
   text-align: center;
@@ -30,6 +32,15 @@ body {
   display: grid;
   margin-top: 4rem;
 }
+
+div#hard-luck,
+div#congrats {
+  justify-items: center;
+}
+
+
+
+
 
 .game-select-container {
   justify-items: center;
@@ -74,7 +85,7 @@ label {
   color: #efb0a1;
 }
 
-h2, h4 {
+h2, h4, h5 {
   font-size: 2rem;
   color: #efb0a1;
   margin-bottom: 2rem;

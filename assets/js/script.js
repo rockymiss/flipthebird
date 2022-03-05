@@ -15,6 +15,10 @@ const getUserDetails = document.getElementById('name-form');
 const playBirdGame = document.getElementById('bird-btn');
 const playAudioGame = document.getElementById('sound-btn');
 const playFeatherGame = document.getElementById('feather-btn');
+const choiceReturn = document.getElementById('game-choice');
+const playAgain = document.getElementById('play-again');
+const congratsContainer = document.getElementById('congrats');
+const hardLuckContainer = document.getElementById('hard-luck');
 let startTime = 30;
 
 
@@ -24,11 +28,27 @@ getUserDetails.addEventListener('submit', getFormDetails);
 playBirdGame.addEventListener('click', startBirdGame);
 playAudioGame.addEventListener('click', startBirdGame);
 playFeatherGame.addEventListener('click', startBirdGame);
+choiceReturn.addEventListener('click', returnToChoice);
+playAgain.addEventListener('click', returnToChoice);
 
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
 
+function showCongrats () {
+    section.classList.add('hide');
+    congratsContainer.classList.remove('hide');
+}
+
+function showHardLuck () {
+    section.classList.add('hide');
+    hardLuckContainer.classList.remove('hide');
+}
+
+function returnToChoice () {
+    hardLuckContainer.classList.add('hide');
+    gameSelect.classList.remove('hide');
+}
 
 /**
  * 
@@ -134,14 +154,15 @@ const matchCards = (e) => {
             setLives--;
             countLives.textContent = setLives;
             if(setLives === 0) {
-                restartGame('try again');
+                
+                showHardLuck();
             }
         }
     }  
    //if user wins game
    if(toggleCard.length === 16){
        setTimeout(() => {
-           restartGame('we won');
+           showCongrats();
        }, 1000)
    } 
 };
