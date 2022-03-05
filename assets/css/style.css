@@ -19,6 +19,7 @@ body {
 .details-container {
   text-align: justify;
   padding: 2rem 0;
+  width: max-content;
 }
 .welcome-container,
 .game-select-container {
@@ -105,6 +106,10 @@ p {
 li {
   margin-left: 0.6 rem;
   list-style: none; 
+}
+
+#timer, #flips {
+  color: #efb0a1;
 }
 
 
@@ -204,6 +209,10 @@ section {
   grid-gap: 1rem;
   
 }
+span {
+  text-align: left;
+  padding: 0.1;
+}
 
 
 }
@@ -224,22 +233,29 @@ h1 {
 .welcome-container {
   width: 90%;
 }
-}
-
-/* for medium screen sizes from 320px wide and down */
-@media screen and (max-width: 320px) {
-    
-  h1 {
-    font-size: 2rem;
-  }
-}
 section {
   grid-template-columns: repeat(4, 4rem);
   grid-template-rows: repeat(4, 4rem);
   grid-gap: 0.5rem;
   
 }
+.details-container {
+  text-align: center;
+  font-size: 0.6rem;
+  
+}
 
+
+}
+
+/* for medium screen sizes from 320px wide and down galaxy fold!*/
+@media screen and (max-width: 320px) {
+    
+  h1 {
+    font-size: 2rem;
+  }
+
+}
 
   
   
