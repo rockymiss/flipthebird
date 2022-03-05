@@ -107,10 +107,6 @@ li {
   list-style: none; 
 }
 
-.birdhouse {
-  width: 20%;
-  height: 20%;
-}
 
 
 /*styles for section created from js cardGenerator()*/
@@ -202,6 +198,14 @@ h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+section {
+  grid-template-columns: repeat(4, 7rem);
+  grid-template-rows: repeat(4, 7rem);
+  grid-gap: 1rem;
+  
+}
+
+
 }
 
   /* for medium screen sizes from 576px wide and down */
@@ -228,6 +232,12 @@ h1 {
   h1 {
     font-size: 2rem;
   }
+}
+section {
+  grid-template-columns: repeat(4, 4rem);
+  grid-template-rows: repeat(4, 4rem);
+  grid-gap: 0.5rem;
+  
 }
 
 
