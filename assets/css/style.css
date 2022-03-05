@@ -97,13 +97,12 @@ h3 {
   color: #efb0a1;
 }
 
-ol {
-  padding-top: 1rem;
-  text-align: left;
-  font-size: 1.6rem;
+p {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
   color: #efb0a1;
-  list-style-position: inside;
-  margin-left: 10px;
+  
 }
 
 li {
