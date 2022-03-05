@@ -38,11 +38,16 @@ countLives.textContent = `${setLives} flips left`;
 function showCongrats () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
+    document.getElementById('h4').textContent = `Congratulations you won!`;
+    restartGame();
 }
 
 function showHardLuck () {
     section.classList.add('hide');
     hardLuckContainer.classList.remove('hide');
+    document.getElementById('h4').textContent = `Sorry you lost!`;
+    restartGame();
+    
 }
 
 function returnToChoice () {
