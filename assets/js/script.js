@@ -19,7 +19,7 @@ const choiceReturn = document.getElementById('game-choice');
 const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
 let gameTimer;
-let num;
+// let num;
 
 
 
@@ -115,7 +115,7 @@ function returnToChoice () {
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
-    cardGenerator();  
+    cardGenerator(1);  
 }
 /**
  * 
@@ -128,7 +128,7 @@ function startFeatherGame(event) {
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
-    cardGenerator();  
+    cardGenerator(2);  
 }
 /**
  * 
@@ -141,23 +141,26 @@ function startCartoonGame(event) {
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
-    cardGenerator();  
+    cardGenerator(3);  
 };
 
 /**
  * 
  * function to make the cards run randomingly
  */
- const randomCards = () => {
-    let cardInfo;
+ const randomCards = (num) => {
+    let cardInfo = [];
     if(num == 1) {
         cardInfo = getImageData();
     } else if (num == 2) {
         cardInfo = getFeatherData();
     } else if (num == 3) {
         cardInfo = getCartoonData();
-    };
+    } else {
+        cardInfo = getImageData();
+    }
     cardInfo.sort(() => Math.random() - 0.5);
+    console.log({cardInfo});
     return cardInfo;
 };
 
@@ -165,8 +168,11 @@ function startCartoonGame(event) {
  * Place cards into the html
  */
 
- let cardGenerator = () => {
-    let cardInfo = randomCards();
+ let cardGenerator = (num) => {
+    let cardInfo = randomCards(num);
+    console.log(num);
+    console.log({cardInfo});
+    deleteChild();
     //generate 16 cards
    
     cardInfo.forEach((item) => {
@@ -194,6 +200,17 @@ function startCartoonGame(event) {
     });
     });   
 };
+
+function deleteChild() {
+        var e = document.querySelector("section");
+        
+        //e.firstElementChild can be used.
+        var child = e.lastElementChild; 
+        while (child) {
+            e.removeChild(child);
+            child = e.lastElementChild;
+        }
+    }
 
 /**
  * function to check the cards match when clicked the event(e) will
