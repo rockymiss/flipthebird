@@ -19,23 +19,24 @@ const getImageData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161421/Flip%20the%20Bird/pexels-cristina-andrea-alvarez-cruz-hummingbird_agq8h0.png", name: "humming" }
 ];
 
-const getAudioData = () => [
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-seagull-squawks_rwokct.mp3", name: "seagull"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-hawk-screech_mvusts.mp3", name: "hawk"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-screech_n7fymk.mp3", name: "bird-screech"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-rooster_bbp0uc.mp3", name: "rooster"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-sandpiper_dumu5p.mp3", name: "sandpiper"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-goose-honk_ktlqcm.mp3", name: "goose"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-chicken-crow_coikhw.mp3", name: "chicken"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339720/Flip%20the%20Bird/sounds/es-bird-chirp_dz6tah.mp3", name: "chirp"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-seagull-squawks_rwokct.mp3", name: "seagull"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-hawk-screech_mvusts.mp3", name: "hawk"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-screech_n7fymk.mp3", name: "bird-screech"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-rooster_bbp0uc.mp3", name: "rooster"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-sandpiper_dumu5p.mp3", name: "sandpiper"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-bird-goose-honk_ktlqcm.mp3", name: "goose"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339721/Flip%20the%20Bird/sounds/es-chicken-crow_coikhw.mp3", name: "chicken"},
-    {Audio: "https://res.cloudinary.com/rockymiss/video/upload/v1646339720/Flip%20the%20Bird/sounds/es-bird-chirp_dz6tah.mp3", name: "chirp"}
+const getCartoonData = () => [
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577936/Flip%20the%20Bird/cartoons/swan_cgcrfn.png", name: "swan"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/style-bird_x0se16.png", name: "style-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646578168/Flip%20the%20Bird/cartoons/eagle_vuandr.png", name: "eagle"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/dove_jmyqll.png", name: "dove"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/morning-bird_knosnu.png", name: "morning-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/owl_lfn8xw.png", name: "owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/penguin_klwejr.png", name: "penguin"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/stork_b70y17.png", name: "stork"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577936/Flip%20the%20Bird/cartoons/swan_cgcrfn.png", name: "swan"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/style-bird_x0se16.png", name: "style-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646578168/Flip%20the%20Bird/cartoons/eagle_vuandr.png", name: "eagle"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/dove_jmyqll.png", name: "dove"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/morning-bird_knosnu.png", name: "morning-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/owl_lfn8xw.png", name: "owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/penguin_klwejr.png", name: "penguin"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/stork_b70y17.png", name: "stork"}
+    
 ];
 
 const getFeatherData = () => [

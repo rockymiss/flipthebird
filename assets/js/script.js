@@ -13,7 +13,7 @@ let countLives = document.getElementById('flips');
 let setLives = 8;
 const getUserDetails = document.getElementById('name-form');
 const playBirdGame = document.getElementById('bird-btn');
-const playAudioGame = document.getElementById('sound-btn');
+const playCartoonGame = document.getElementById('cartoon-btn');
 const playFeatherGame = document.getElementById('feather-btn');
 const choiceReturn = document.getElementById('game-choice');
 const playGameAgain = document.getElementById('play-again');
@@ -25,7 +25,7 @@ let startTime = 30;
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
 playBirdGame.addEventListener('click', startBirdGame);
-playAudioGame.addEventListener('click', startBirdGame);
+playCartoonGame.addEventListener('click', startBirdGame);
 playFeatherGame.addEventListener('click', startBirdGame);
 choiceReturn.addEventListener('click', returnToChoice);
 playGameAgain.addEventListener('click', playAgain);
