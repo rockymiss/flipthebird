@@ -3,7 +3,7 @@
 
 # Flip the Bird Game
 
-For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  The came is a simple memory match game where the user matches cards before their lives run out.  The user can choose between flipping images of birds, flipping images of feathers or matching bird sounds. 
+For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  The came is a simple memory match game where the user matches cards before their lives run out.  The user can choose between flipping images of birds, flipping images of feathers or flipping images of cartoon birds. 
 
 Link to the deployed website is [here](https://rockymiss.github.io/flipthebird/). 
 
@@ -43,13 +43,13 @@ To return to the home page.
 The game is laid out simply so when first loaded the user knows what the game is.   Buttons are used throughout the game for easy access to different sections. 
 When the game is first loaded the user immedidately sees information on how to play the game. 
 The information on how to play shows the user how to start the game by entering their name. 
-The user will see three simple buttons to choose from, birds, feathers or sounds. 
+The user will see three simple buttons to choose from, birds, feathers or cartoons. 
 16 cards are laid out and can be turned easily by clicking or pressing on each card. 
 Using 16 cards, there are 8 matching pairs.  The user can see clear images as each card is turned. 
 Above the game cards the user can see how many lives they have to begin with and as they make choices their lives will decrease by one each time so the user can see how many lives are left.
 Above the game cards the user can see a timer which will count upwards showing them how long it takes to match all of the cards. 
 If the user loses the game a container will pop up telling them they have lost.  If a user wins the game a container will pop up telling them they have won and how long it took them to win. 
-Both containers to say the user has won or lost contains two buttons giving the user an option to choose a different game or to play the same game again.
+Both containers to say the user has won or lost contains a button letting them play again by choosing a game.
 The user can click the logo at the top of the page to return to the welcome container at any time.   
 
 -----
@@ -73,7 +73,7 @@ The logo is always visible at the top of the page and if clicked the user can re
 The welcome container is visible when first loaded.  This container tells the user what the game is about and how to play the game.  The container has an input for the user's name and a button to start the game. 
 
 - Game Choice Container
-Once the user submits their name this container will only be visible along with the logo.  This container has three buttons to choose from three different games, birds, feathers or sounds. 
+Once the user submits their name this container will only be visible along with the logo.  This container has three buttons to choose from three different games, birds, feathers or cartoons. 
 
 - Details Container
 The details container appears below the logo and above the playing cards on all games.  It shows a timer so the user can see how long it takes them to play the game and it shows how many lives/flips the user has left to complete the game. 
@@ -82,10 +82,10 @@ The details container appears below the logo and above the playing cards on all 
 The game container contains 16 cards in a grid.  There are 8 matching pairs in total.  The cards can be flipped over to see the images as the user clicks them.  Cards that match will stay visible, cards that don't will flip back over. 
 
 - Losing Container 
-If the user runs out of lives the Game container will disappear and the losing container will show telling the user they have lost.  This container will have two buttons allowing the user to play again or to choose a different game. 
+If the user runs out of lives the Game container will disappear and the losing container will show telling the user they have lost.  This container will have a button allowing the user to play again by choosing a game. 
 
 - Winning Container
-If the user matches all cards correctly the Game container will disappear and the winning container will show telling the user they have won and how long it took them to match all of the cards.  This container will also have two buttons allowing the user to play again or to choose a different game. 
+If the user matches all cards correctly the Game container will disappear and the winning container will show telling the user they have won and how long it took them to match all of the cards.  This container will have a button allowing the user to play again by choosing a game. 
 
 - Buttons
 There are various buttons used throughout the game:
@@ -94,10 +94,9 @@ There are various buttons used throughout the game:
   - Game Choice Container: 
     - Birds Button once clicked allows the user to play the bird images game.
     - Feathers Button once clicked allows the user to play the feather images game.
-    - Sound Button once clicked allows the user to play the bird sound game.
+    - Cartoon Button once clicked allows the user to play the cartoon images game.
   - Losing Container and winning Containers:
-    - Play Again Button once clicked allows the user to play the same button again. 
-    - Choose Game Button once clicked allows the user to choose a different game. 
+    - Play Again Button once clicked allows the user to play again by choosing a game. 
 
 ### Structure Plane
 
