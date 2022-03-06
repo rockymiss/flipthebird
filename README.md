@@ -1,13 +1,13 @@
-<p align="center"><img src="#"></p>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646565496/Flip%20the%20Bird/fliplogo_hcufxs.png"></p>
 
 
 # Flip the Bird Game
 
-For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird. 
+For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  It is a three in one flip game.  The user can choose between flipping images of birds, flipping images of feathers or matching bird sounds. 
 
-Link to the deployed website is [here](#) 
+Link to the deployed website is [here](https://rockymiss.github.io/flipthebird/). 
 
-Link to the repository is [here](#) 
+Link to the repository is [here](https://github.com/rockymiss/flipthebird). 
 
 The Design has been focused to **Desktop** first and **Responsive**
 
