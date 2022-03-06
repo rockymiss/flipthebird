@@ -151,15 +151,12 @@ Photo by Jad El Mourad from Pexels - red bird
 Photo by Jean van der Meulen from Pexels - Peacock
 
 
-#### Shapes
-Photo by byMALENS from Pexels - blue hexagon
-Photo by Miscellaneous Background from Pexels - Pink and grey star
-Photo by Thomas Plets from Pexels - flower
-Photo by Elīna Arāja from Pexels - circle
-Photo by Oleg Magni from Pexels - bowl
-Photo by The glorious studio from Pexels heart
-Photo by rotekirsche 20 from Pexels - tiles
-Photo by Gleb Vasylynka from Pexels - triangle     
+#### Feathers
+Feather images created using [Canva.com](https://www.canva.com/).
+
+#### Sounds
+
+All bird sounds effects were found on [Epidemicsound](https://www.epidemicsound.com/music/featured/).  As per their licence model when using free sounds,   sounds can be used as long as you don't make money from the content created. 
 
 -----
 ## Testing
