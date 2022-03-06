@@ -3,7 +3,7 @@
 
 # Flip the Bird Game
 
-For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  It is a three in one flip game.  The user can choose between flipping images of birds, flipping images of feathers or matching bird sounds. 
+For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  The came is a simple memory match game where the user matches cards before their lives run out.  The user can choose between flipping images of birds, flipping images of feathers or matching bird sounds. 
 
 Link to the deployed website is [here](https://rockymiss.github.io/flipthebird/). 
 
@@ -16,8 +16,7 @@ The Design has been focused to **Desktop** first and **Responsive**
 -----
 ## Who is this quiz for and what does it do? 
 
-
-
+Flip the Bird is a game for children or adults alike to pass the time. Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus.
 -----
 ## User Experience
 
@@ -25,11 +24,33 @@ The Design has been focused to **Desktop** first and **Responsive**
 ### From a User's Perspective
 As a user it is important: 
 
+That it is easy to navigate the game. 
+To understand the rules of the game. 
+To understand how to start the game. 
+To choose a game they want to play. 
+To turn cards to play the game. 
+To clearly see images to match.
+To see how many lives they have and how many remain as they play. 
+To see how long it takes them to play.
+To see if they have won or lost the game. 
+To play again or to choose a different game. 
+To return to the home page. 
+
 
 
 ### Users Fulfilment
 
-
+The game is laid out simply so when first loaded the user knows what the game is.   Buttons are used throughout the game for easy access to different sections. 
+When the game is first loaded the user immedidately sees information on how to play the game. 
+The information on how to play shows the user how to start the game by entering their name. 
+The user will see three simple buttons to choose from, birds, feathers or sounds. 
+16 cards are laid out and can be turned easily by clicking or pressing on each card. 
+Using 16 cards, there are 8 matching pairs.  The user can see clear images as each card is turned. 
+Above the game cards the user can see how many lives they have to begin with and as they make choices their lives will decrease by one each time so the user can see how many lives are left.
+Above the game cards the user can see a timer which will count upwards showing them how long it takes to match all of the cards. 
+If the user loses the game a container will pop up telling them they have lost.  If a user wins the game a container will pop up telling them they have won and how long it took them to win. 
+Both containers to say the user has won or lost contains two buttons giving the user an option to choose a different game or to play the same game again.
+The user can click the logo at the top of the page to return to the welcome container at any time.   
 
 -----
 ## UX 
