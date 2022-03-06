@@ -81,6 +81,7 @@ function showHardLuck () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Sorry you lost!`;
+    
     restartGame();
     
 }
@@ -162,8 +163,7 @@ function startCartoonGame(event) {
         cardInfo = getImageData();
     }
     cardInfo.sort(() => Math.random() - 0.5);
-    console.log({cardInfo});
-    return cardInfo;
+        return cardInfo;
 };
 
 /**
@@ -172,8 +172,8 @@ function startCartoonGame(event) {
 
  let cardGenerator = (num) => {
     let cardInfo = randomCards(num);
-    console.log(num);
-    console.log({cardInfo});
+   
+   
     deleteChild();
     //generate 16 cards
    
@@ -230,14 +230,14 @@ const matchCards = (e) => {
             flippedCards[0].getAttribute('name') === 
             flippedCards[1].getAttribute('name')
         ) {
-            console.log('match');
+            
             //match
                 flippedCards.forEach((card) => {
                 card.classList.remove('flipped-card');
                 card.style.pointerEvents = "none";
             });
         } else {
-            console.log('wrong');
+            
             // wrong
                 flippedCards.forEach((card) => {
                 card.classList.remove('flipped-card');
@@ -247,9 +247,10 @@ const matchCards = (e) => {
             setLives--;
             countLives.textContent = `${setLives} flips left`;
             if(setLives === 0) {
-                
+                setTimeout(() => {
                 detailsContainer.classList.add('hide');
                 showHardLuck();
+                });
             } else {
                 showCongrats;
             }      
@@ -258,6 +259,7 @@ const matchCards = (e) => {
    //if user wins game
    if(toggleCard.length === 16){
        setTimeout(() => {
+           detailsContainer.classList.add('hide');
            showCongrats();
            
        }, 1000);
