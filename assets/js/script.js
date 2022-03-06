@@ -19,7 +19,7 @@ const choiceReturn = document.getElementById('game-choice');
 const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
 let gameTimer;
-let num = 1;
+let num;
 
 
 
@@ -72,6 +72,7 @@ function showCongrats () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Congratulations you won the game with a time of ${myTime}!`;
+    startTimer(min, display);
     restartGame();
 }
 
@@ -79,6 +80,7 @@ function showHardLuck () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Sorry you lost!`;
+    startTimer(min, display);
     restartGame();
     
 }
@@ -163,8 +165,8 @@ function startCartoonGame(event) {
  * Place cards into the html
  */
 
- const cardGenerator = () => {
-    const cardInfo = randomCards();
+ let cardGenerator = () => {
+    let cardInfo = randomCards();
     //generate 16 cards
    
     cardInfo.forEach((item) => {
@@ -228,6 +230,7 @@ const matchCards = (e) => {
             if(setLives === 0) {
                 
                 showHardLuck();
+               
             }
         }
     }  
@@ -235,6 +238,7 @@ const matchCards = (e) => {
    if(toggleCard.length === 16){
        setTimeout(() => {
            showCongrats();
+           
        }, 1000);
    } 
 };
@@ -261,5 +265,3 @@ const matchCards = (e) => {
         setTimeout(() => window.alert(text), 1000);
     };
 
-
-cardGenerator();
