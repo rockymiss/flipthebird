@@ -62,7 +62,8 @@ function startTimer(duration, display) {
  * Function to display timer
  */
 function timerDisplay() {
-    let min = 60 * 0.0001,
+    let min = 60 * 0.0001;
+    clearInterval(gameTimer);
     display = document.querySelector('#timer');
     startTimer(min, display);
 }
