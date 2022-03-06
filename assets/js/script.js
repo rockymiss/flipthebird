@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function(){
 const detailsContainer = document.getElementById('details-container');
 const welcomeContainer = document.getElementById('welcome-container');
 const gameSelect = document.getElementById('game-select-container');
-const imagesQuiz = document.getElementById('quiz-container-images');
 const section = document.querySelector('section');
 let countLives = document.getElementById('flips');
 let setLives = 8;
@@ -16,11 +15,11 @@ const playBirdGame = document.getElementById('bird-btn');
 const playCartoonGame = document.getElementById('cartoon-btn');
 const playFeatherGame = document.getElementById('feather-btn');
 const choiceReturn = document.getElementById('game-choice');
-const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
 let gameTimer;
-// let num;
-
+let num;
+let display;
+let min;
 
 
 //Event Listeners
@@ -145,7 +144,7 @@ function startCartoonGame(event) {
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
     cardGenerator(3);  
-};
+}
 
 /**
  * 
@@ -251,8 +250,7 @@ const matchCards = (e) => {
                 detailsContainer.classList.add('hide');
                 showHardLuck();
                 });
-            } else {
-                showCongrats;
+    
             }      
         }
     }  
@@ -269,7 +267,7 @@ const matchCards = (e) => {
 /**
  * Restarts Game 
  */ 
-    const restartGame = (text) => {
+    const restartGame = () => {
         let cardInfo = randomCards();
         let cardFaces = document.querySelectorAll('.face-card');
         let cards = document.querySelectorAll('.card');
@@ -285,6 +283,4 @@ const matchCards = (e) => {
         });
         setLives = 8;
         countLives.textContent = setLives;
-        setTimeout(() => window.alert(text), 1000);
     };
-
