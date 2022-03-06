@@ -81,7 +81,6 @@ function showHardLuck () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Sorry you lost!`;
-    startTimer(min, display);
     restartGame();
     
 }
@@ -89,6 +88,8 @@ function showHardLuck () {
 function returnToChoice () {
     congratsContainer.classList.add('hide');
     gameSelect.classList.remove('hide');
+    setLives = 8;
+    countLives.textContent = `${setLives} flips left`;
 }
 
 /**
@@ -203,10 +204,10 @@ function startCartoonGame(event) {
 };
 
 function deleteChild() {
-        var e = document.querySelector("section");
+        let e = document.querySelector("section");
         
         //e.firstElementChild can be used.
-        var child = e.lastElementChild; 
+        let child = e.lastElementChild; 
         while (child) {
             e.removeChild(child);
             child = e.lastElementChild;
@@ -244,12 +245,14 @@ const matchCards = (e) => {
             });
             //player lives
             setLives--;
-            countLives.textContent = setLives;
+            countLives.textContent = `${setLives} flips left`;
             if(setLives === 0) {
                 
+                detailsContainer.classList.add('hide');
                 showHardLuck();
-               
-            }
+            } else {
+                showCongrats;
+            }      
         }
     }  
    //if user wins game
