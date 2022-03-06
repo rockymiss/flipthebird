@@ -25,11 +25,9 @@ let startTime = 30;
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
 playBirdGame.addEventListener('click', startBirdGame);
-playCartoonGame.addEventListener('click', startBirdGame);
-playFeatherGame.addEventListener('click', startBirdGame);
+playCartoonGame.addEventListener('click', startCartoonGame);
+playFeatherGame.addEventListener('click', startFeatherGame);
 choiceReturn.addEventListener('click', returnToChoice);
-playGameAgain.addEventListener('click', playAgain);
-
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
