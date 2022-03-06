@@ -19,6 +19,8 @@ const choiceReturn = document.getElementById('game-choice');
 const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
 let startTime = 30;
+let gameTimer;
+let num = 1;
 
 
 
@@ -31,6 +33,40 @@ choiceReturn.addEventListener('click', returnToChoice);
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
+
+/**
+ * 
+ * Function to start countup timer
+ */
+function startTimer(duration, display) {
+    let timer = duration;
+    let minutes;
+    let seconds;
+
+    gameTimer = setInterval (function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (++timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+/**
+ * 
+ * Function to display timer
+ */
+function timerDisplay() {
+    let min = 60 * 0.0001,
+    display = document.querySelector('#timer');
+    startTimer(min, display);
+}
 
 function showCongrats () {
     section.classList.add('hide');
@@ -68,30 +104,37 @@ function returnToChoice () {
 
 /**
  * 
- * Function to close game selection and start game
+ * Function to start bird game
  */
-
-
  function startBirdGame(event) {
     num = 1;
+    timerDisplay();
     event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
     cardGenerator();  
 }
-
+/**
+ * 
+ * Function to start Feather game
+ */
 function startFeatherGame(event) {
     num = 2;
+    timerDisplay();
     event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
     detailsContainer.classList.remove('hide');  
     cardGenerator();  
 }
-
+/**
+ * 
+ * Function to start cartoon game
+ */
 function startCartoonGame(event) {
     num = 3;
+    timerDisplay();
     event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
