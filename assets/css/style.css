@@ -13,14 +13,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;      
+    flex-direction: column;
+    color: #efb0a1;      
 }
-/*Styles on Name and Game containers*/
+
+/*Styles on details timer and lives*/
 .details-container {
   text-align: justify;
   padding: 2rem 0;
   width: max-content;
 }
+span {
+  padding: 0 5rem;
+}
+
+/*Welcome and game container*/
 .welcome-container,
 .game-select-container {
   width: 60%;
@@ -36,6 +43,24 @@ body {
   justify-items: center;
 }
 
+#user-name {
+  border-radius: 5px;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+input {
+  text-align: center;
+}
+
+*:focus {
+  outline: none;
+}
+label {
+  font-size: 2.5rem;
+  color: #efb0a1;
+}
+
+/*Congratulations and Hard luck containers*/
 div#congrats,
 div#hard-luck {
   width: 60%;
@@ -44,10 +69,6 @@ div#hard-luck {
   padding: 2rem;
   border-radius: 10px;
   margin-top: 4rem;
-}
-
-span {
-  padding: 0 5rem;
 }
 
 /*buttons*/
@@ -60,60 +81,26 @@ span {
   font-size: 1rem;
   color: #54494b;
 }
-#user-name {
-  border-radius: 5px;
-  font-size: 1.4rem;
-  margin: 2rem 0;
-}
 
-input {
-  text-align: center;
-}
-
-*:focus {
-  outline: none;
-}
-
-/*headings*/
+/*headings and paragraphs*/
 h1 {
   font-size: 8rem;
-  color: #efb0a1;
-}
-
-label {
-  font-size: 2.5rem;
-  color: #efb0a1;
 }
 
 h2, h4, h5 {
   font-size: 2rem;
-  color: #efb0a1;
   margin-bottom: 2rem;
 }
 
 h3 {
-  font-size: 1.8rem;
-  color: #efb0a1;
+  font-size: 1.8rem;  
 }
 
 p {
   padding-top: 2rem;
   text-align: center;
-  font-size: 1.4rem;
-  color: #efb0a1; 
+  font-size: 1.4rem; 
 }
-
-li {
-  margin-left: 0.6 rem;
-  list-style: none; 
-}
-
-#timer, #flips {
-  color: #efb0a1;
-}
-
-
-
 /*styles for section created from js cardGenerator()*/
 section {
   display: grid;
@@ -170,7 +157,6 @@ h1  {
 
 h2, h3, h4 {
   font-size: 1.6rem;
-  color: #efb0a1;
   margin-bottom: 2rem;
 }
 
@@ -189,6 +175,7 @@ h1 {
 p {
  font-size: 1rem;
 }
+
 #user-name {
   border-radius: 5px;
   font-size: 0.8rem;
@@ -199,10 +186,12 @@ input {
   text-align: center;
   margin-top: 0;
 }
+
 h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
 section {
   grid-template-columns: repeat(4, 7rem);
   grid-template-rows: repeat(4, 7rem);
@@ -213,8 +202,6 @@ span {
   text-align: left;
   padding: 0.1;
 }
-
-
 }
 
   /* for medium screen sizes from 576px wide and down */
@@ -230,31 +217,28 @@ span {
 h1 {
   font-size: 2.5rem;
 }
+
 .welcome-container {
   width: 90%;
 }
+
 section {
   grid-template-columns: repeat(4, 4rem);
   grid-template-rows: repeat(4, 4rem);
   grid-gap: 0.5rem;
   
 }
+
 .details-container {
   text-align: center;
   font-size: 0.6rem;
   
 }
+
 .global-btn {
-  
-  /* padding: 0.5rem;
- 
-  margin: 0.5rem; */
-  
+  margin: 0.5rem; 
   font-size: 0.8rem;
-  
 }
-
-
 }
 
 /* for medium screen sizes from 320px wide and down galaxy fold!*/
@@ -263,7 +247,6 @@ section {
   h1 {
     font-size: 2rem;
   }
-
 }
 
   
