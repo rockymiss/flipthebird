@@ -54,11 +54,6 @@ function returnToChoice () {
     gameSelect.classList.remove('hide');
 }
 
-function playAgain () {
-    congratsContainer.classList.add('hide');
-    section.classList.remove('hide');
-}
-
 /**
  * 
  * Function to get username, hide input and 
