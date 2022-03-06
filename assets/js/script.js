@@ -18,7 +18,6 @@ const playFeatherGame = document.getElementById('feather-btn');
 const choiceReturn = document.getElementById('game-choice');
 const playGameAgain = document.getElementById('play-again');
 const congratsContainer = document.getElementById('congrats');
-let startTime = 30;
 let gameTimer;
 let num = 1;
 
@@ -69,9 +68,10 @@ function timerDisplay() {
 }
 
 function showCongrats () {
+    let myTime = document.getElementById('timer').innerText;
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
-    document.getElementById('result').textContent = `Congratulations you won!`;
+    document.getElementById('result').textContent = `Congratulations you won the game with a time of ${myTime}!`;
     restartGame();
 }
 
