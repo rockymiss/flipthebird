@@ -166,6 +166,11 @@ p {
 }
 }
 
+.welcome-container,
+.game-select-container {
+  margin-top: 2rem;
+}
+
   /* for medium screen sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
 h1 {
@@ -207,20 +212,18 @@ span {
   /* for medium screen sizes from 576px wide and down */
 @media screen and (max-width: 576px) {
 .fas {
-  visibility: hidden;
+  font-size: 1rem;
 }
 
 .welcome-container {
-  padding: 1rem;
+  padding: 0 1rem;
+  width: 90%;
 }
 
 h1 {
   font-size: 2.5rem;
 }
 
-.welcome-container {
-  width: 90%;
-}
 
 section {
   grid-template-columns: repeat(4, 4rem);
@@ -239,6 +242,7 @@ section {
   margin: 0.5rem; 
   font-size: 0.8rem;
 }
+
 }
 
 /* for medium screen sizes from 320px wide and down galaxy fold!*/
@@ -247,6 +251,7 @@ section {
   h1 {
     font-size: 2rem;
   }
+  
 }
 
   
