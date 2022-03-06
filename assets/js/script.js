@@ -73,18 +73,45 @@ function returnToChoice () {
 
 
  function startBirdGame(event) {
+    num = 1;
     event.preventDefault();
     gameSelect.classList.add('hide');
     section.classList.remove('hide');
-    detailsContainer.classList.remove('hide');    
+    detailsContainer.classList.remove('hide');  
+    cardGenerator();  
 }
+
+function startFeatherGame(event) {
+    num = 2;
+    event.preventDefault();
+    gameSelect.classList.add('hide');
+    section.classList.remove('hide');
+    detailsContainer.classList.remove('hide');  
+    cardGenerator();  
+}
+
+function startCartoonGame(event) {
+    num = 3;
+    event.preventDefault();
+    gameSelect.classList.add('hide');
+    section.classList.remove('hide');
+    detailsContainer.classList.remove('hide');  
+    cardGenerator();  
+};
 
 /**
  * 
  * function to make the cards run randomingly
  */
  const randomCards = () => {
-    const cardInfo = getImageData();
+    let cardInfo;
+    if(num == 1) {
+        cardInfo = getImageData();
+    } else if (num == 2) {
+        cardInfo = getFeatherData();
+    } else if (num == 3) {
+        cardInfo = getCartoonData();
+    };
     cardInfo.sort(() => Math.random() - 0.5);
     return cardInfo;
 };
