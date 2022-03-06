@@ -72,7 +72,6 @@ function showCongrats () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Congratulations you won the game with a time of ${myTime}!`;
-    startTimer(min, display);
     restartGame();
 }
 
