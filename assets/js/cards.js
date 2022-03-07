@@ -20,22 +20,22 @@ const getImageData = () => [
 ];
 
 const getCartoonData = () => [
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577936/Flip%20the%20Bird/cartoons/swan_cgcrfn.png", name: "swan"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/style-bird_x0se16.png", name: "style-bird"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646578168/Flip%20the%20Bird/cartoons/eagle_vuandr.png", name: "eagle"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/dove_jmyqll.png", name: "dove"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/morning-bird_knosnu.png", name: "morning-bird"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/owl_lfn8xw.png", name: "owl"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/penguin_klwejr.png", name: "penguin"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/stork_b70y17.png", name: "stork"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577936/Flip%20the%20Bird/cartoons/swan_cgcrfn.png", name: "swan"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/style-bird_x0se16.png", name: "style-bird"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646578168/Flip%20the%20Bird/cartoons/eagle_vuandr.png", name: "eagle"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/dove_jmyqll.png", name: "dove"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/morning-bird_knosnu.png", name: "morning-bird"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/owl_lfn8xw.png", name: "owl"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/penguin_klwejr.png", name: "penguin"},
-    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646577935/Flip%20the%20Bird/cartoons/stork_b70y17.png", name: "stork"}
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/cockatoo_jqj3zs.png", name: "cockatoo"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/green-bird_t1gvvb.png", name: "green-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/owl_zjqa4a.png", name: "owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/baby-bird_n2ctxl.png", name: "baby-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/smarrt-owl_fis4sc.png", name: "smart-owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/hawk_j07o9a.png", name: "angry-hawk"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/penguin_walwbo.png", name: "penguin"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/smart-duck_r0cldw.png", name: "smart-duck"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/cockatoo_jqj3zs.png", name: "cockatoo"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/green-bird_t1gvvb.png", name: "green-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/owl_zjqa4a.png", name: "owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/baby-bird_n2ctxl.png", name: "baby-bird"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/smarrt-owl_fis4sc.png", name: "smart-owl"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/hawk_j07o9a.png", name: "angry-hawk"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/penguin_walwbo.png", name: "penguin"},
+    {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/smart-duck_r0cldw.png", name: "smart-duck"}
     
 ];
 
