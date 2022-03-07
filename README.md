@@ -173,31 +173,35 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 
 - HTML5 to provide content and structure to the website.
 - CSS3 provides styles for the website. 
-- [Coolors.co](https://coolors.co/) to select colors for the website that   would work well together.  
-- [Cloudinary.com](https://www.cloudinary.com/) to store images for the   website.
+- [Coolors.co](https://coolors.co/) to select colors for the website that would work well together.  
+- [Cloudinary.com](https://www.cloudinary.com/) to store images for the website.
 - [Google Fonts](https://fonts.google.com/) for font.
+- Balsamiq to create wireframes.
+- [Canva.com](https://www.canva.com/) for bird image on cards. 
+- [TinyPNG](https://tinypng.com/) - to compress images.
 - Gitpod to create and edit the website. 
 - GibHub for hosting files and deployment of the website.
-- Balsamiq to create wireframes.
-- [Canva.com](https://www.canva.com/) for bird image on cards  
-- [TinyPNG](https://tinypng.com/) - to compress images
+- Google Chrome DevTools for debug and testing site.
+- GitBash to push changes to the GitHub repository.
 
 <details open>
 <summary>Tinypng image</summary>
 <br>
-<p align="center"><img src="#"></p><!--compressed photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646686482/Flip%20the%20Bird/tinypng_d97fss.png"></p><!--compressed photos-->
 
 </details>
 
 -----
 ## Resources 
 
-
 - Code Institute course materials, tutor and mentor support.
 - Code Institute Slack Community.
 - Love Maths walk-through on Code Insitute.
 - [W3schools](https://www.w3schools.com/) 
-- [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  This video really gave me a better understanding of JavaScript.   
+- I used [Stackoverflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript) but in particular for the timer. 
+- [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  I used this code for the appending of the card images, shuffle and matching of cards.  I changed the code to suit this game as it was three games in one.  I struggled initially with Javascript and this walkthrough video really helped me get a better understanding of it.  Particularily manipulating the DOM.  I also liked the way he created a function for the data.  I mostly kept his transform styles of the cards flipping.  I tried it a few other ways but I really liked this style and it worked well with my theme. 
+- [Udemy- The Complete 2022 Web Development Bootcamp](https://www.udemy.com)
+   
 
 ### Images
 
@@ -215,9 +219,9 @@ Photo by Jean van der Meulen from Pexels - Peacock
 #### Feathers
 Feather images created using [Canva.com](https://www.canva.com/).
 
-#### Sounds
+#### Cartoons
 
-All bird sounds effects were found on [Epidemicsound](https://www.epidemicsound.com/music/featured/).  As per their licence model when using free sounds,   sounds can be used as long as you don't make money from the content created. 
+Cartoon images created using [Canva.com](https://www.canva.com/).
 
 -----
 ## Testing
