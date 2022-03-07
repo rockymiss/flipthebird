@@ -153,10 +153,11 @@ The following palette of colors were chosen as they were eye-catching, vibrant f
 #9D0208 - for hover colour on buttons
 
  
-
 ##### Typography
 
-Logo - Orbitron, sans-serif - google fonts
+Throughout the site I  used Orbitron, sans-serif from google fonts as it was clear and easy to read.  
+
+For the logo I used Paalalabas Wide which was created externally using canva.com.  This font was used as it was visually appealling and very readable. 
 
 
 -----
