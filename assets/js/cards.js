@@ -1,5 +1,4 @@
 //card data for bird images 
-
 const getImageData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161422/Flip%20the%20Bird/pexels-michelle-reeves-puffins_qa3amh.png", name: "puffins" },
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161422/Flip%20the%20Bird/pexels-mark-broadhurst-colorfulparrot_lutlc4.png", name: "parrotcolor" },
@@ -18,7 +17,7 @@ const getImageData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161421/Flip%20the%20Bird/pexels-jos-van-ouwerkerk-bluehead_dzjett.png", name: "bluepeacock" },
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161421/Flip%20the%20Bird/pexels-cristina-andrea-alvarez-cruz-hummingbird_agq8h0.png", name: "humming" }
 ];
-
+//card data for Cartoon images 
 const getCartoonData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/cockatoo_jqj3zs.png", name: "cockatoo"},
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/green-bird_t1gvvb.png", name: "green-bird"},
@@ -36,9 +35,8 @@ const getCartoonData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/hawk_j07o9a.png", name: "angry-hawk"},
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/penguin_walwbo.png", name: "penguin"},
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646655403/Flip%20the%20Bird/cartoons/smart-duck_r0cldw.png", name: "smart-duck"}
-    
 ];
-
+//card data for Feather images 
 const getFeatherData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646341023/Flip%20the%20Bird/feathers/purple-feather_jif3i4.png", name: "purple-feather" },
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646341023/Flip%20the%20Bird/feathers/pink-feather_h0q60e.png", name: "pink-feather" },

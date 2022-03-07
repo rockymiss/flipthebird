@@ -31,6 +31,7 @@ goHome.addEventListener('click', goToWelcomePage);
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `Flips Left: ${setLives}`;
+
 /**
  * 
  * Function to return to homescreen 
@@ -42,11 +43,11 @@ countLives.textContent = `Flips Left: ${setLives}`;
     gameSelect.classList.add('hide');
     welcomeContainer.classList.remove('hide');
     detailsContainer.classList.add('hide');
-
  }
 /**
  * 
- * Function to start countup timer
+ * Function to create timer that will increase and display 
+ * in the DOM
  */
 function startTimer(duration, display) {
     let timer = duration;
@@ -79,6 +80,11 @@ function timerDisplay() {
     startTimer(min, display);
 }
 
+/**
+ * Function that will congratulate the user if they
+ * win the game.  This will also restart the game
+ */
+
 function showCongrats () {
     let myTime = document.getElementById('timer').innerText;
     section.classList.add('hide');
@@ -87,14 +93,23 @@ function showCongrats () {
     restartGame();
 }
 
+/**
+ * Function that will show a container saying they lost
+ * This function also starts the game
+ */
+
 function showHardLuck () {
     section.classList.add('hide');
     congratsContainer.classList.remove('hide');
     document.getElementById('result').textContent = `Sorry you lost!`;
-    
-    restartGame();
-    
+    restartGame(); 
 }
+
+/**
+ * Function that will allow the user to return to the choice container
+ * This function will also reset lives otherwise lives will go into 
+ * minus figures.
+ */
 
 function returnToChoice () {
     congratsContainer.classList.add('hide');
@@ -116,11 +131,14 @@ function returnToChoice () {
     detailsContainer.classList.add('hide');
     document.getElementById('name-result').textContent = `Hello ${name.value} please choose an option below`;
 }
-
 /**
  * 
- * Function to start bird game
+ * This function is used to start the bird game.  num 1 is used to retrieve the
+ * image data and will be used in the randomCards 
+ * and cardGenerator functions.  This function also 
+ * displays the timer and hides and removes classes and generates cards.
  */
+
  function startBirdGame(event) {
     num = 1;
     timerDisplay();
@@ -132,7 +150,10 @@ function returnToChoice () {
 }
 /**
  * 
- * Function to start Feather game
+ * This function is used to start the feather game.  num 2 is used to retrieve the
+ * image data and will be used in the randomCards 
+ * and cardGenerator functions.  This function also 
+ * displays the timer and hides and removes classes and generates cards.
  */
 function startFeatherGame(event) {
     num = 2;
@@ -145,7 +166,10 @@ function startFeatherGame(event) {
 }
 /**
  * 
- * Function to start cartoon game
+ * This function is used to start the cartoon game.  num 3 is used to retrieve the
+ * image data and will be used in the randomCards 
+ * and cardGenerator functions.  This function also 
+ * displays the timer and hides and removes classes and generates cards.
  */
 function startCartoonGame(event) {
     num = 3;
@@ -158,8 +182,9 @@ function startCartoonGame(event) {
 }
 
 /**
- * 
- * function to make the cards run randomingly
+ * This function gets the correct image data for each game
+ * @param {*refers to all available data} num 
+ * @returns 
  */
  const randomCards = (num) => {
     let cardInfo = [];
@@ -177,17 +202,16 @@ function startCartoonGame(event) {
 };
 
 /**
- * Place cards into the html
+ * This function puts all of the cards into the DOM
+ * @param {correct card data to target} num 
  */
-
  let cardGenerator = (num) => {
     let cardInfo = randomCards(num);
+     
+    deleteChild();//deletes child to avoid duplication on restart
    
-   
-    deleteChild();
-    //generate 16 cards
-   
-    cardInfo.forEach((item) => {
+    //generates 16 cards
+       cardInfo.forEach((item) => {
         //get html
     const cardElement = document.createElement('div');
     const cardFace = document.createElement('img');
@@ -198,10 +222,10 @@ function startCartoonGame(event) {
     cardBack.classList = 'back-card';
     //attach face to card 
     cardFace.src = item.imgSrc;
-    //give card a name attribute to match cards
+    //gives card a name attribute to match cards
     cardElement.setAttribute('name', item.name);
-    cardFace.setAttribute('alt', item.name);
-    //attach cards to section
+    cardFace.setAttribute('alt', item.name);//required for accessibility
+    //attaches cards to section
     section.appendChild(cardElement);
     cardElement.appendChild(cardFace);
     cardElement.appendChild(cardBack);
@@ -212,7 +236,12 @@ function startCartoonGame(event) {
     });
     });   
 };
-
+/**
+ * * This function is required as the cards need to be 
+ * deleted (deleteChild()) otherwise the cards
+ *  will be appended over and over again.
+ * code from https://www.w3schools.com/jsref/met_node_removechild.asp
+ */
 function deleteChild() {
         let e = document.querySelector("section");
         
@@ -228,6 +257,7 @@ function deleteChild() {
  * function to check the cards match when clicked the event(e) will
  * capture data
  * and the target is the element that was clicked 
+ * code from developedbyEd with some changes see Readme
  */
 const matchCards = (e) => {
     const cardClicked = e.target;
@@ -277,6 +307,7 @@ const matchCards = (e) => {
 
 /**
  * Restarts Game 
+ * Code from developedbyEd see readme
  */ 
     const restartGame = () => {
         let cardInfo = randomCards();
