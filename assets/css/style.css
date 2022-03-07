@@ -73,14 +73,15 @@ div#hard-luck {
 
 /*buttons*/
 .global-btn {
-  width: auto;
+  margin: 0.5rem 0;
+  width: 7rem;
   padding: 0.5rem;
   border-radius: 5px;
-  margin: 0.5rem;
   background-color: #efb0a1;
   font-size: 1rem;
   color: #54494b;
 }
+
 
 /*headings and paragraphs*/
 h1 {
@@ -239,7 +240,6 @@ section {
 }
 
 .global-btn {
-  margin: 0.5rem; 
   font-size: 0.8rem;
 }
 
