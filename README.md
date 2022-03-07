@@ -199,7 +199,7 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 - Love Maths walk-through on Code Insitute.
 - [W3schools](https://www.w3schools.com/) 
 - I used [Stackoverflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript) but in particular for the timer. 
-- [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  I used this code for the appending of the card images, shuffle and matching of cards.  I changed the code to suit this game as it was three games in one.  I struggled initially with Javascript and this walkthrough video really helped me get a better understanding of it.  Particularily manipulating the DOM.  I also liked the way he created a function for the data.  I mostly kept his transform styles of the cards flipping.  I tried it a few other ways but I really liked this style and it worked well with my theme. 
+- [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  I used this code for the appending of the card images, shuffle and matching of cards.  I changed the code to suit this game as it was three games in one.  I struggled initially with Javascript and this walkthrough video really helped me get a better understanding of it.  Particularily manipulating the DOM.  I also liked the way he created functions for the data.  I mostly kept his transform styles of the cards flipping.  I tried it a few other ways but I really liked this style and it worked well with my theme.   
 - [Udemy- The Complete 2022 Web Development Bootcamp](https://www.udemy.com)
    
 
@@ -243,7 +243,7 @@ Note:
 
 ### User Testing
 
-The website was sent to a group of approximately 20 people, most of which were parents.  Users found the website very functional and easy to navigate.  Some devices used were as follows: 
+The website was sent to a group of approximately 20 people of all different ages.  My children 6 and 8 also tested the game and could manage functionality well and really enjoyed it.  Other users found the game easy to work through but found it hard to win in under 8 flips.  I didn't change the flip lives because of this as all users kept going back to the game to try to win!  Some in competition with others.  I liked this as they kept coming back to it.  
 
 - Huawei P30
 - IPhone 7s
