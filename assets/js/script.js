@@ -16,6 +16,7 @@ const playCartoonGame = document.getElementById('cartoon-btn');
 const playFeatherGame = document.getElementById('feather-btn');
 const choiceReturn = document.getElementById('game-choice');
 const congratsContainer = document.getElementById('congrats');
+const goHome = document.getElementById('logo');
 let gameTimer;
 let num;
 let display;
@@ -28,10 +29,23 @@ playBirdGame.addEventListener('click', startBirdGame);
 playCartoonGame.addEventListener('click', startCartoonGame);
 playFeatherGame.addEventListener('click', startFeatherGame);
 choiceReturn.addEventListener('click', returnToChoice);
+goHome.addEventListener('click', goToWelcomePage);
 
 //Link flip lives variable to dom and set to setlives 
 countLives.textContent = `${setLives} flips left`;
+/**
+ * 
+ * Function to return to homescreen 
+ * 
+ */
+ function goToWelcomePage() {
+    section.classList.add('hide');
+    congratsContainer.classList.add('hide');
+    gameSelect.classList.add('hide');
+    welcomeContainer.classList.remove('hide');
+    detailsContainer.classList.add('hide');
 
+ }
 /**
  * 
  * Function to start countup timer

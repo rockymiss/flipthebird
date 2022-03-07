@@ -12,7 +12,7 @@
 </head>
 <body>
         <header>
-          <img src="https://res.cloudinary.com/rockymiss/image/upload/c_scale,w_1203/v1646648943/Flip%20the%20Bird/bird-logo_dhleyk.png" alt="Flip the bird logo" class="logo">
+          <img src="https://res.cloudinary.com/rockymiss/image/upload/c_scale,w_1203/v1646648943/Flip%20the%20Bird/bird-logo_dhleyk.png" alt="Flip the bird logo" class="logo" id="logo">
             
         </header>
         
@@ -36,10 +36,10 @@
           <form id="name-form">
             <div class="name">
                 <label for="user-name"></label>
-                <input id="user-name" type="text" placeholder="Name" name="name" required>
+                <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
             </div>
             
-            <input type="submit" value="BEGIN" class="global-btn">
+            <input type="submit" value="BEGIN" class="global-btn" >
         </form>
         </div>
       
@@ -63,6 +63,8 @@
         <section class="hide">
             <!--appended from js-->
         </section>
+
+        <footer>Created by Rachel Rock March 2022</footer>
         
     
     <script src="assets/js/cards.js"></script>
