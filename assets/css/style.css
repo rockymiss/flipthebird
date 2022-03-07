@@ -7,14 +7,14 @@
 }
 
 body {
-    background: linear-gradient(#4dccbd, #54494b);
+    background: linear-gradient(#f48c06, #9d0208);
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #efb0a1;      
+    color: #ffba08;      
 }
 
 /*Styles on details timer and lives*/
@@ -22,6 +22,7 @@ body {
   text-align: justify;
   padding: 2rem 0;
   width: max-content;
+  color: #03071e;
 }
 span {
   padding: 0 5rem;
@@ -31,7 +32,7 @@ span {
 .welcome-container,
 .game-select-container {
   width: 60%;
-  background-color: #54494b;
+  background-color: #370617;
   text-align: center;
   padding: 2rem;
   border-radius: 10px;
@@ -77,15 +78,15 @@ div#hard-luck {
   width: 7rem;
   padding: 0.5rem;
   border-radius: 5px;
-  background-color: #efb0a1;
+  background-color: #e85d04;
   font-size: 1rem;
-  color: #54494b;
+  color: #03071e;
 }
-
 
 /*headings and paragraphs*/
 h1 {
   font-size: 8rem;
+  color: #370617;
 }
 
 h2, h4, h5 {
@@ -126,7 +127,7 @@ section {
 }
 
 .back-card {
-   background-image: url('https://res.cloudinary.com/rockymiss/image/upload/v1646170940/Flip%20the%20Bird/flip-the-bird-card_acwcw6.png');
+   background-image: url('https://res.cloudinary.com/rockymiss/image/upload/v1646647643/Flip%20the%20Bird/back-card_llkn0j.png');
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: hidden;
