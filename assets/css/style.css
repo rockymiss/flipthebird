@@ -24,6 +24,7 @@ body {
   width: max-content;
   color: #03071e;
 }
+
 span {
   padding: 0 5rem;
 }
@@ -40,8 +41,7 @@ span {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  display: inline;
-  
+  display: inline;  
 }
 
 .game-select-container {
@@ -54,13 +54,11 @@ span {
   margin: 1rem;
   width: 12em;
 }
-input {
-  text-align: center;
-}
 
 *:focus {
   outline: none;
 }
+
 label {
   font-size: 2.5rem;
 }
@@ -124,7 +122,9 @@ p {
   width: 100%;
   margin: 0.5rem;
 }
+
 /*styles for section created from js cardGenerator()*/
+/*Code for flipping cards from developedbyEd see readme*/
 section {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
@@ -133,6 +133,7 @@ section {
   perspective: 500px;
 }
 /*Styles on cards*/
+/*Code for flipping cards from developedbyEd see readme*/
 .card {
   position: relative;
   transform-style: preserve-3d;
@@ -170,14 +171,11 @@ section {
    font-size: 0.8rem;
  }
 
-/*Responsiveness Settings*/
 
+/*Responsiveness Settings*/
 
   /* for medium screen sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
-/* h1 {
-    font-size: 3.5rem;
-}  */
 p {
  font-size: 1rem;
 }
@@ -196,13 +194,14 @@ input {
 section {
   grid-template-columns: repeat(4, 7rem);
   grid-template-rows: repeat(4, 7rem);
-  grid-gap: 1rem;
-  
+  grid-gap: 1rem; 
 }
+
 span {
   text-align: left;
   padding: 0.1;
 }
+
 h3, h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;  
@@ -212,11 +211,10 @@ h3, h4 {
   /* for medium screen sizes from 576px wide and down */
 @media screen and (max-width: 576px) {
 
-  .welcome-container {
+.welcome-container {
     padding: 0 0.5rem;
     width: 80%;
-  }
-
+}
 
 section {
   grid-template-columns: repeat(4, 4rem);
@@ -229,32 +227,40 @@ section {
   text-align: center;
    
 }
+
 .global-btn {
   font-size: 0.8rem;
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 p {
   margin: 0;
 }
+
 h3, h4 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;  
 }
+
 footer {
    font-size: 0.5rem;
 }
 }
+
 /* for medium screen sizes from 320px wide and down Galaxy Fold!*/
 @media screen and (max-width: 320px) {
 h1 {
   display: none;
 }
+
 h2 {
   margin-top: 0.5rem;
 }
