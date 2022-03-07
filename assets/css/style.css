@@ -65,6 +65,11 @@ label {
   font-size: 2.5rem;
 }
 
+input#user-name {
+  text-align: center;
+  color: #370617;
+}
+
 /*Congratulations and Hard luck containers*/
 div#congrats,
 div#hard-luck {
@@ -85,6 +90,10 @@ div#hard-luck {
   background-color: #e85d04;
   font-size: 1rem;
   color: #03071e;
+}
+
+.global-btn:hover {
+  background-color: #9D0208;
 }
 
 /*headings and paragraphs*/
@@ -146,7 +155,7 @@ section {
 }
 
 .toggle-cards {
-  transform: rotateY(190deg);
+  transform: rotatey(190deg);
 }
 
 /*style to hide and display game sections*/
@@ -213,16 +222,13 @@ section {
   text-align: center;
    
 }
-
 .global-btn {
   font-size: 0.8rem;
 }
-
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 h2 {
   font-size: 1.5rem;
 }
@@ -234,23 +240,12 @@ h3, h4 {
   margin-bottom: 0.3rem;  
 }
 }
-
 /* for medium screen sizes from 320px wide and down Galaxy Fold!*/
 @media screen and (max-width: 320px) {
-
 h1 {
   display: none;
 }
 h2 {
   margin-top: 0.5rem;
 }
-
 }
-
-
-
-  
-  
-  
-  
-  
