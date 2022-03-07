@@ -14,43 +14,45 @@ The Design has been focused to **Desktop** first and **Responsive**
 ![alt text](#) <!--mockup image here-->
 
 -----
-## Who is this quiz for and what does it do? 
 
-Flip the Bird is a game for children or adults alike to pass the time. Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus.
+## Who is this game for and what does it do?
+Flip the Bird is a game for children or adults alike to pass the time matching different images.  Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus.  
+
 -----
+
 ## User Experience
 
 
 ### From a User's Perspective
 As a user it is important: 
 
-That it is easy to navigate the game. 
-To understand the rules of the game. 
-To understand how to start the game. 
-To choose a game they want to play. 
-To turn cards to play the game. 
-To clearly see images to match.
-To see how many lives they have and how many remain as they play. 
-To see how long it takes them to play.
-To see if they have won or lost the game. 
-To play again or to choose a different game. 
-To return to the home page. 
+1. That it is easy to navigate the game. 
+2. To understand the rules of the game. 
+3. To understand how to start the game. 
+4. To choose a game they want to play. 
+5. To turn cards to play the game. 
+6. To clearly see images to match.
+7. To see how many lives they have and how many remain as they play. 
+8. To see how long it takes them to play.
+9. To see if they have won or lost the game. 
+10. To play again or to choose a different game. 
+11. To return to the home page. 
 
 
 
 ### Users Fulfilment
 
-The game is laid out simply so when first loaded the user knows what the game is.   Buttons are used throughout the game for easy access to different sections. 
-When the game is first loaded the user immedidately sees information on how to play the game. 
-The information on how to play shows the user how to start the game by entering their name. 
-The user will see three simple buttons to choose from, birds, feathers or cartoons. 
-16 cards are laid out and can be turned easily by clicking or pressing on each card. 
-Using 16 cards, there are 8 matching pairs.  The user can see clear images as each card is turned. 
-Above the game cards the user can see how many lives they have to begin with and as they make choices their lives will decrease by one each time so the user can see how many lives are left.
-Above the game cards the user can see a timer which will count upwards showing them how long it takes to match all of the cards. 
-If the user loses the game a container will pop up telling them they have lost.  If a user wins the game a container will pop up telling them they have won and how long it took them to win. 
-Both containers to say the user has won or lost contains a button letting them play again by choosing a game.
-The user can click the logo at the top of the page to return to the welcome container at any time.   
+1. The game is laid out simply so when first loaded the user knows what the game is.   Buttons are used throughout the game for easy access to different sections. 
+2. When the game is first loaded the user immedidately sees information on how to play the game. 
+3. The information on how to play shows the user how to start the game by entering their name. 
+4. The user will see three simple buttons to choose from, birds, feathers or cartoons. 
+5. 16 cards are laid out and can be turned easily by clicking or pressing on each card. 
+6. Using 16 cards, there are 8 matching pairs.  The user can see clear images as each card is turned. 
+7. Above the game cards the user can see how many lives they have to begin with and as they make choices their lives will decrease by one each time so the user can see how many lives are left.
+8. Above the game cards the user can see a timer which will count upwards showing them how long it takes to match all of the cards. 
+9. If the user loses the game a container will pop up telling them they have lost.  If a user wins the game a container will pop up telling them they have won and how long it took them to win. 
+10. Both containers to say the user has won or lost contains a button letting them play again by choosing a game.
+11. The user can click the logo at the top of the page to return to the welcome container at any time.   
 
 -----
 ## UX 
@@ -100,7 +102,9 @@ There are various buttons used throughout the game:
 
 ### Structure Plane
 
-There are ?? different pages on this website: 
+There is one index page with four different containers. 
+
+   different pages on this website: 
 
 -
 
