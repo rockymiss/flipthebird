@@ -10,66 +10,58 @@
     <script src="https://kit.fontawesome.com/0037301c3f.js" crossorigin="anonymous"></script>
     <title>Flip the Bird</title>
 </head>
-<body>
+    <body>
+        <!--Logo-->
         <header>
-          <img src="https://res.cloudinary.com/rockymiss/image/upload/c_scale,w_1203/v1646648943/Flip%20the%20Bird/bird-logo_dhleyk.png" alt="Flip the bird logo" class="logo" id="logo">
-            
+            <img src="https://res.cloudinary.com/rockymiss/image/upload/c_scale,w_1203/v1646648943/Flip%20the%20Bird/bird-logo_dhleyk.png" alt="Flip the bird logo" class="logo" id="logo">
         </header>
-        
+        <!--Timer and lives left for game-->
         <div class="details-container hide" id="details-container">
             <span id="timer">0.00</span>
             <span id="flips">0 Flips Left</span>
         </div>
+        <!--Welcome information for user-->
         <div class="welcome-container" id="welcome-container">
-        <h1>Welcome to Flip the Bird</h1>
-        <h2>How to Play</h2>
-        <p>
-        
-        It's simply really.  Enter your name below to start and then pick
-        from one of the three games: birds, feathers or cartoons.  Try to match 
-        the cards before you lose all of your lives.  You only have 8 lives
-        so try to remember where the cards are.  You can play over and over 
-        again! 
-        
-
-        </p>
-          <form id="name-form">
-            <div class="name">
-                <label for="user-name"></label>
-                <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
-            </div>
-            
+            <h1>Welcome to Flip the Bird</h1>
+            <h2>How to Play</h2>
+            <p> It's simply really.  Enter your name below to start and then pick
+                from one of the three games: birds, feathers or cartoons.  Try to match 
+                the cards before you lose all of your lives.  You only have 8 lives
+                so try to remember where the cards are.  You can play over and over 
+                again! 
+            </p>
+        <!--Name input for user-->
+        <div class="name">    
+            <form id="name-form">
+            <label for="user-name"></label>
+            <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
+            <br>
             <input type="submit" value="BEGIN" class="global-btn" >
-        </form>
+            </form>
         </div>
-      
+        <!--Game Choice Container-->
         <div class="game-select-container hide" id="game-select-container">
             <h3 id="name-result">0</h3>
             <button class="global-btn" id="bird-btn" type="submit">Birds
             </button>
-           <button class="global-btn" id="feather-btn" type="submit">Feathers
+            <button class="global-btn" id="feather-btn" type="submit">Feathers
             </button>
             <button class="global-btn" id="cartoon-btn" type="submit">Cartoons
             </button>
         </div>
-
+        <!--Congratulations and Hard Luck Container-->
         <div class="congrats-container hide" id="congrats">
             <h4 id="result">show result</h4> 
             <button class="global-btn" id="game-choice" type="submit">Play Again
             </button>
         </div>
-
-    
+        <!--Card Game Section script-->
         <section class="hide">
             <!--appended from js-->
         </section>
-
         <footer>Created by Rachel Rock March 2022</footer>
-        
-    
-    <script src="assets/js/cards.js"></script>
-    <script src="assets/js/script.js"></script>
-    
-    
-</body>
+        <!--JS files-->
+        <script src="assets/js/cards.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
