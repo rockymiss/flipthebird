@@ -1,9 +1,9 @@
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646565496/Flip%20the%20Bird/fliplogo_hcufxs.png"></p>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646648943/Flip%20the%20Bird/bird-logo_dhleyk.png"></p>
 
 
 # Flip the Bird Game
 
-For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  The came is a simple memory match game where the user matches cards before their lives run out.  The user can choose between flipping images of birds, flipping images of feathers or flipping images of cartoon birds. 
+For my **Portfolio 2 Project** on the **Code Institute's Diploma in Software Development (E-commerce Applications)** course I have created a card flip game called Flip the Bird.  The game is a simple memory match game where the user matches cards before their lives run out.  The user can choose between flipping images of birds, flipping images of feathers or flipping images of cartoon birds. 
 
 Link to the deployed website is [here](https://rockymiss.github.io/flipthebird/). 
 
