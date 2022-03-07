@@ -20,8 +20,6 @@ const goHome = document.getElementById('logo');
 let gameTimer;
 let num;
 let display;
-let min;
-
 
 //Event Listeners
 getUserDetails.addEventListener('submit', getFormDetails);
@@ -32,7 +30,7 @@ choiceReturn.addEventListener('click', returnToChoice);
 goHome.addEventListener('click', goToWelcomePage);
 
 //Link flip lives variable to dom and set to setlives 
-countLives.textContent = `${setLives} flips left`;
+countLives.textContent = `Flips Left: ${setLives}`;
 /**
  * 
  * Function to return to homescreen 
@@ -102,7 +100,7 @@ function returnToChoice () {
     congratsContainer.classList.add('hide');
     gameSelect.classList.remove('hide');
     setLives = 8;
-    countLives.textContent = `${setLives} flips left`;
+    countLives.textContent = `Flips Left: ${setLives}`;
 }
 
 /**
@@ -257,7 +255,7 @@ const matchCards = (e) => {
             });
             //player lives
             setLives--;
-            countLives.textContent = `${setLives} flips left`;
+            countLives.textContent = `Flips left: ${setLives} `;
             if(setLives === 0) {
                 setTimeout(() => {
                 detailsContainer.classList.add('hide');
