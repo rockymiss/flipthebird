@@ -163,7 +163,9 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 -----
 ## Future Implementation 
 
-- 
+- I really wanted to add a game using sounds for this project however I ran out of time.  It is definitely something I will re-visit as I think a game with different bird sounds could really add to this game while making it more accessible for all users.
+
+- I would also like to add a leader board showing the fastest times to complete each game. 
 
 -----
 ## Technologies Used 
@@ -173,12 +175,10 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 - CSS3 provides styles for the website. 
 - [Coolors.co](https://coolors.co/) to select colors for the website that   would work well together.  
 - [Cloudinary.com](https://www.cloudinary.com/) to store images for the   website.
-- [Font Awesome](https://fontawesome.com) for the social media icons on the footer. 
 - [Google Fonts](https://fonts.google.com/) for font.
 - Gitpod to create and edit the website. 
 - GibHub for hosting files and deployment of the website.
 - Balsamiq to create wireframes.
-- 
 - [Canva.com](https://www.canva.com/) for bird image on cards  
 - [TinyPNG](https://tinypng.com/) - to compress images
 
