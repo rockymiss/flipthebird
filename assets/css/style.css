@@ -37,7 +37,11 @@ span {
   padding: 2rem;
   border-radius: 10px;
   display: grid;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  
 }
 
 .game-select-container {
@@ -47,7 +51,8 @@ span {
 #user-name {
   border-radius: 5px;
   font-size: 1.4rem;
-  margin: 2rem 0;
+  margin: 1rem;
+  width: 12em;
 }
 input {
   text-align: center;
@@ -58,14 +63,13 @@ input {
 }
 label {
   font-size: 2.5rem;
-  color: #efb0a1;
 }
 
 /*Congratulations and Hard luck containers*/
 div#congrats,
 div#hard-luck {
   width: 60%;
-  background-color: #54494b;
+  background-color: #370617;
   text-align: center;
   padding: 2rem;
   border-radius: 10px;
@@ -84,24 +88,32 @@ div#hard-luck {
 }
 
 /*headings and paragraphs*/
-h1 {
-  font-size: 8rem;
-  color: #370617;
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
-h2, h4, h5 {
-  font-size: 2rem;
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
-h3 {
-  font-size: 1.8rem;  
+h2 {
+  font-size: 2rem;
+}
+
+h3, h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;  
 }
 
 p {
-  padding-top: 2rem;
+  padding-top: 1.8rem;
   text-align: center;
   font-size: 1.4rem; 
+  width: 100%;
+  margin: 0.5rem;
 }
 /*styles for section created from js cardGenerator()*/
 section {
@@ -144,59 +156,25 @@ section {
 
 /*Responsiveness Settings*/
 
-/* for medium screen sizes from 1200px wide and down*/
-@media screen and (max-width: 1200px) {
-h1  {
-    font-size: 6.5rem;
-  }
-}
-
-  /* for medium screen sizes from 992px wide and down */
-@media screen and (max-width: 992px) {
-h1  {
-    font-size: 5rem;
-}
-
-h2, h3, h4 {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-}
-
-p {
-  padding-top: 1rem;
-  font-size: 1.2rem;
-}
-}
-
-.welcome-container,
-.game-select-container {
-  margin-top: 2rem;
-}
 
   /* for medium screen sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
-h1 {
+/* h1 {
     font-size: 3.5rem;
-} 
-
+}  */
 p {
  font-size: 1rem;
 }
 
 #user-name {
   border-radius: 5px;
-  font-size: 0.8rem;
   margin: 0.5rem 0;
+  width: 8em;
 }
 
 input {
   text-align: center;
   margin-top: 0;
-}
-
-h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
 }
 
 section {
@@ -209,22 +187,19 @@ span {
   text-align: left;
   padding: 0.1;
 }
+h3, h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;  
+}
 }
 
   /* for medium screen sizes from 576px wide and down */
 @media screen and (max-width: 576px) {
-.fas {
-  font-size: 1rem;
-}
 
-.welcome-container {
-  padding: 0 1rem;
-  width: 90%;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
+  .welcome-container {
+    padding: 0 0.5rem;
+    width: 80%;
+  }
 
 
 section {
@@ -236,24 +211,43 @@ section {
 
 .details-container {
   text-align: center;
-  font-size: 0.6rem;
-  
+   
 }
 
 .global-btn {
   font-size: 0.8rem;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* for medium screen sizes from 320px wide and down galaxy fold!*/
-@media screen and (max-width: 320px) {
-    
-  h1 {
-    font-size: 2rem;
-  }
-  
+h2 {
+  font-size: 1.5rem;
 }
+p {
+  margin: 0;
+}
+h3, h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;  
+}
+}
+
+/* for medium screen sizes from 320px wide and down Galaxy Fold!*/
+@media screen and (max-width: 320px) {
+
+h1 {
+  display: none;
+}
+h2 {
+  margin-top: 0.5rem;
+}
+
+}
+
+
 
   
   
