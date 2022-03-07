@@ -102,11 +102,22 @@ There are various buttons used throughout the game:
 
 ### Structure Plane
 
-There is one index page with four different containers. 
+There is one index page with a logo and six different containers. 
 
-   different pages on this website: 
-
--
+  - Logo
+      The logo is at the top of the page always.  The logo is simple text with the words FLIP THE BIRD and two bird images either side.  The main logo was chosen as it clearly states the name and the images compliment the name of the game.  
+  - Welcome Container
+      The Welcome container is the first thing that people will see.  It welcomes the user and gives clear instructions how to play the game. It's important that the user knows what the game is about when they land on the page and it's important also that they know how to start the game.  The user can enter their name in the welcome container.   There is a button on the welcome container with the word "begin" which is clear to the user that this will begin the process of starting the game. 
+  - Game Select Container
+      The game select container gives the user three different options for games.  The user will see three different buttons.  The first button when clicked will allow the user to play a game matching bird images.  The second is a feather game, which allows the user to play a game matching different colour feathers and the third is a matching game with cartoon images of birds. 
+  - Game Container
+      The game container consits of 16 cards face down.  The user can turn over the cards one at a time by clicking on the cards.  If the images on the cards match, the cards will stay up.  If the images do not match the cards will turn back over.  The user has eight lives.  Each unmatch of cards will result in the user losing a life.
+  - Details Container 
+      The details container appears above when game container when the user starts a game.  Inside this container is a timer and how many lives the user has.  If the user fails to make a match of cards then they will lose a life which can be since decreasing in the details container.  The timer counts up to show the user how long it is taking them to match the cards. 
+  - Hard Luck Container 
+      The hard-luck container appears if the user loses all of their lives before matching all of the cards.  The user gets a message to say "Sorry you have lost".  Inside this container there is a button with the words "Play Again".  When this button is clicked the user is re-directed to the game select container. 
+  - Congratulations Container 
+      The congratulations container appears if the user matches all of the cards before running out of lives.  When the game is won a message pops up saying "Congratulations you won the game with a time of ...".  The time it took the player to match all of the cards appears at the end of this message.  The congratulations container also contains a button wtih the words "Play Again" which will re-directed the player back to the game select container. 
 
 ### Skeleton 
 
