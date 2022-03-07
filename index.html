@@ -20,7 +20,7 @@
             <span id="timer">0.00</span>
             <span id="flips">0 Flips Left</span>
         </div>
-        <!--Welcome information for user-->
+        <!--Welcome information for user and input name-->
         <div class="welcome-container" id="welcome-container">
             <h1>Welcome to Flip the Bird</h1>
             <h2>How to Play</h2>
@@ -30,15 +30,16 @@
                 so try to remember where the cards are.  You can play over and over 
                 again! 
             </p>
-        <!--Name input for user-->
-        <div class="name">    
-            <form id="name-form">
-            <label for="user-name"></label>
-            <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
-            <br>
-            <input type="submit" value="BEGIN" class="global-btn" >
-            </form>
+            <div class="name">    
+                <form id="name-form">
+                <label for="user-name"></label>
+                <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
+                <br>
+                <input type="submit" value="BEGIN" class="global-btn" >
+                </form>
+            </div>
         </div>
+        <!--End of Welcome-->
         <!--Game Choice Container-->
         <div class="game-select-container hide" id="game-select-container">
             <h3 id="name-result">0</h3>
@@ -49,18 +50,20 @@
             <button class="global-btn" id="cartoon-btn" type="submit">Cartoons
             </button>
         </div>
+        <!--End of Game Choice-->
         <!--Congratulations and Hard Luck Container-->
         <div class="congrats-container hide" id="congrats">
             <h4 id="result">show result</h4> 
             <button class="global-btn" id="game-choice" type="submit">Play Again
             </button>
         </div>
+        <!--End of Congrats and Hard Luck-->
         <!--Card Game Section script-->
         <section class="hide">
             <!--appended from js-->
         </section>
         <footer>Created by Rachel Rock March 2022</footer>
-        <!--JS files-->
+        <!--JS-->
         <script src="assets/js/cards.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
