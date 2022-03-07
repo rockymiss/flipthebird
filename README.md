@@ -123,32 +123,36 @@ There is one index page with a logo and six different containers.
 
 The design was focused to mobile first but can be used on larger devices.  Wireframes are done using balsamiq:  
 
-##### Index
+##### Welcome Container
 
-![alt text](#)
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646670386/Flip%20the%20Bird/flip-bird-welcome_sonu4d.png)
 
-##### Recipe
+##### Game Choice Container
 
-![alt text](#)
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646670386/Flip%20the%20Bird/game-choice_bszde0.png)
 
-##### Sign-up
+##### Game Container
 
-![alt text](#)
-
-##### thank-you 
-
-![alt text](#)
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646670386/Flip%20the%20Bird/game-birdflip_n0ryb6.png)
 
 
 ### Surface  
 
 ##### Colors 
 
-The following palette of colors were chosen as they were clean, welcoming and easy to read: 
+The following palette of colors were chosen as they were eye-catching, vibrant for the game and worked well together: 
 
-<p align="center"><img src="#"></p><!--palette of colours image-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646658143/Flip%20the%20Bird/color-palette_elvk4j.png"></p><!--palette of colours image-->
 
-  
+#F48C06 and #9d0208 - for gradient background
+#FFBA08 - for text colour 
+#03071E - for text colour on details container and buttons
+#370617 - for background colour on containers and back of playing cards
+#370617 - for input text colour on name input
+#E85D04 - for background colour on buttons
+#9D0208 - for hover colour on buttons
+
+ 
 
 ##### Typography
 
