@@ -25,14 +25,15 @@
             <h1>Welcome to Flip the Bird</h1>
             <h2>How to Play</h2>
             <p> It's simple really.  Enter your name below to start and then pick
-                from one of the three games: birds, feathers or cartoons.  Try to match 
-                the cards before you lose all of your lives.  You only have 8 lives
-                so try to remember where the cards are.  You can play over and over 
-                again! 
+                from one of the three games: birds, feathers or cartoons.</p>
+            <p>Try to match 
+               the cards before you lose all of your lives.  You only have 8 lives
+               so try to remember where the cards are.  You can play over and over 
+               again! 
             </p>
             <div class="name">    
                 <form id="name-form">
-                <label for="user-name"></label>
+                <label for="user-name">Name:</label>
                 <input id="user-name" type="text" placeholder="Name" name="name" onfocus="this.value=''" required>
                 <br>
                 <input type="submit" value="BEGIN" class="global-btn" >
@@ -42,7 +43,7 @@
         <!--End of Welcome-->
         <!--Game Choice Container-->
         <div class="game-select-container hide" id="game-select-container">
-            <h3 id="name-result">0</h3>
+            <h3 id="name-result">Name of User</h3>
             <button class="global-btn" id="bird-btn" type="submit">Birds
             </button>
             <button class="global-btn" id="feather-btn" type="submit">Feathers
