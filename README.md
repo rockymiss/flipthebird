@@ -293,23 +293,21 @@ The website was sent to a group of approximately 15 people of all different ages
 
 - Huawei P30
 - IPhone 7s
+- Iphone 10
 - IPhone 11
-- Iphone 12 Pro max
-- Redmi note 9
-- Samsung A21.  
+- Iphone 12 
+- Samsung A32
+- Samsung A21.
+- Samung Galaxy S10+
+- Samsung S8  
 
-This testing proved very helpful with responsivness errors etc 
-
-https://user-images.githubusercontent.com/95221562/157125074-c0d08397-b881-4798-b863-806614bf58ba.mp4
-
+This testing proved very helpful with responsivness errors and other errors that did not show up using chrome dev tools.  Issues arose with iphone devices where the cards would not flip and the images wouldn't show.  See video below.  The error was solved by applying webkit styles to the transition and transform styles for the flip animation in CSS.  
 
 <center>**Error**</center>
 
-<p align="center"><img src="#"></p><!--error photos-->
+<p align="center">https://user-images.githubusercontent.com/95221562/157125074-c0d08397-b881-4798-b863-806614bf58ba.mp4</p>
 
-<center>**Fix**</center> 
 
-<p align="center"><img src="#"></p><!--error fixed photos-->
 
 ### Browser Testing
 
@@ -318,20 +316,36 @@ The Website has been tested on Google Chrome, Microsoft Edge, Safari and Opera. 
 
 ### Validators 
 
-The website was tested using Jigsaw W3C validation.   
+The website was tested using Jigsaw W3C validation. 
 
 <details open>
-<summary>Validator Error</summary>
+<summary>HTML Validator Clear</summary>
 <br>
-<p align="center"><img src="#"></p><!--validator photos-->
+<p align="center"><img src=https://res.cloudinary.com/rockymiss/image/upload/v1646684030/Flip%20the%20Bird/html-validator_ipgxao.png></p><!--validator clear photos-->
 
 </details>
-
+<br>
 
 <details open>
-<summary>Validator Clear</summary>
+<summary>CSS Validator Error</summary>
 <br>
-<p align="center"><img src="#"></p><!--validator clear photos-->
+<p align="center"><img src=https://res.cloudinary.com/rockymiss/image/upload/v1646684589/Flip%20the%20Bird/css-validator-error_c3nwes.png></p><!--validator clear photos-->
+
+</details>
+<br>
+
+<details open>
+<summary>CSS Validator Clear</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646684589/Flip%20the%20Bird/css-validator-complete_gackut.png"></p><!--validator clear photos-->
+
+</details>
+<br>
+
+<details open>
+<summary>JSHint Test</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646751399/Flip%20the%20Bird/jshint-flipbird_pqstwx.png"></p><!--validator clear photos-->
 
 </details>
 <br>
@@ -348,7 +362,7 @@ To check responsiveness I used Google Chrome Dev Tools.  Desktop, Mobile and tab
 <summary>Lighthouse desktop report preview</summary>
 <br>
 
-<p align="center"><img src="#"></p><!--lighthouse desktop photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646752191/Flip%20the%20Bird/desktop-lighthouse-flip_luz8sp.png"></p>
 
 </details>
 <br>
@@ -357,30 +371,11 @@ To check responsiveness I used Google Chrome Dev Tools.  Desktop, Mobile and tab
 <summary>Lighthouse mobile report preview</summary>
 <br>
 
-<p align="center"><img src="#"></p><!--Lighthouse mobile photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646752191/Flip%20the%20Bird/mobile-lighthouse-flip_k0sf9z.png"></p>
 
 </details>
 <br>
 
-When using Chrome lighthouse an error occured because 
-
-<details open>
-<summary>Lighthouse error preview</summary>
-<p align="center"><img src="#"></p> <!--lighthouse error photos-->
-
-</details>
-<br>
-
-
-### Result: Webpagetest
-
-I carried out a test using [webpagetest.org](https://webpagetest.org/) 
-
-<details open>
-<summary>Webpage Test Preview</summary><!--webpage test photos-->
-<p align="center"><img src="#"></p>
-</details>
-<br>
 
 ### Color Contrast Testing 
 
