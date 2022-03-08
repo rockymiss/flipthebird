@@ -113,15 +113,15 @@ There is one index page with a logo and six different containers.
   - Game Container
       - The game container consits of 16 cards face down.  The user can turn over the cards one at a time by clicking on the cards.  If the images on the cards match, the cards will stay up.  If the images do not match the cards will turn back over.  The user has eight lives.  Each unmatch of cards will result in the user losing a life.
   - Details Container 
-      - The details container appears above when game container when the user starts a game.  Inside this container is a timer and how many lives the user has.  If the user fails to make a match of cards then they will lose a life which can be since decreasing in the details container.  The timer counts up to show the user how long it is taking them to match the cards. 
+      - The details container appears above the game container when the user starts a game.  Inside this container is a timer and how many lives/flips left the user has.  If the user fails to make a match of cards then they will lose a life which can be seen decreasing in the details container.  The timer counts up to show the user how long it is taking them to match the cards. 
   - Hard Luck Container 
-      - The hard-luck container appears if the user loses all of their lives before matching all of the cards.  The user gets a message to say "Sorry you have lost".  Inside this container there is a button with the words "Play Again".  When this button is clicked the user is re-directed to the game select container. 
+      - The hard-luck container appears if the user loses all of their lives/flips left before matching all of the cards.  The user gets a message to say "Sorry you have lost".  Inside this container there is a button with the words "Play Again".  When this button is clicked the user is re-directed to the game select container. 
   - Congratulations Container 
-      - The congratulations container appears if the user matches all of the cards before running out of lives.  When the game is won a message pops up saying "Congratulations you won the game with a time of ...".  The time it took the player to match all of the cards appears at the end of this message.  The congratulations container also contains a button wtih the words "Play Again" which will re-directed the player back to the game select container. 
+      - The congratulations container appears if the user matches all of the cards before running out of lives.  When the game is won a message pops up saying "Congratulations you won the game with a time of ...".  The time it took the player to match all of the cards appears at the end of this message.  The congratulations container also contains a button wtih the words "Play Again" which will re-direct the player back to the game select container. 
 
 ### Skeleton 
 
-The design was focused to mobile first but can be used on larger devices.  Wireframes are done using balsamiq:  
+The design was focused to desktop first but can be used on small devices.  Wireframes are done using balsamiq:  
 
 ##### Welcome Container
 
@@ -144,30 +144,30 @@ The following palette of colors were chosen as they were eye-catching, vibrant f
 
 <p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646658143/Flip%20the%20Bird/color-palette_elvk4j.png"></p><!--palette of colours image-->
 
-#F48C06 and #9d0208 - for gradient background
-#FFBA08 - for text colour 
-#03071E - for text colour on details container and buttons
-#370617 - for background colour on containers and back of playing cards
-#370617 - for input text colour on name input
-#E85D04 - for background colour on buttons
-#9D0208 - for hover colour on buttons
+1. #F48C06 and #9d0208 - for gradient background
+2. #FFBA08 - for text colour 
+3. #03071E - for text colour on details container and buttons
+4. #370617 - for background colour on containers and back of playing cards
+5. #370617 - for input text colour on name input
+6. #E85D04 - for background colour on buttons
+7. #9D0208 - for hover colour on buttons
 
  
 ##### Typography
 
 Throughout the site I  used Orbitron, sans-serif from google fonts as it was clear and easy to read.  
 
-For the logo I used Paalalabas Wide which was created externally using canva.com.  This font was used as it was visually appealling and very readable. 
+For the logo I used Paalalabas Wide which was created externally using [Canva](https//www.canva.com).  This font was used as it was visually appealling and very readable. 
 
 
 -----
 ## Future Implementation 
 
-- I really wanted to add a game using sounds for this project however I ran out of time.  It is definitely something I will re-visit as I think a game with different bird sounds could really add to this game while making it more accessible for all users.
+- I would love to add a game using sounds for this project.  It is definitely something I will re-visit as I think a game with different bird sounds could really add to this game while making it more accessible for all users.
 
 - I would also like to add a leader board showing the fastest times to complete each game. 
 
-- Links to social media.  While could have been easily added I didn't feel they were necessary for this project as they served no purpose to the game. 
+- Links to social media.  While could have been easily added I didn't feel they were necessary for this project as they served no purpose to the game.  However as the game expands or other games are introduced a social media platform would be useful. 
 
 -----
 ## Technologies Used 
@@ -211,14 +211,14 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 ### Images
 
 #### Birds
-Photo by Michelle Reeves from Pexels - puffins
-Photo by mark broadhurst from Pexels - colourful bird
-Photo by chris clark from Pexels - crested lark
-Photo by Jos van Ouwerkerk from Pexels - blue head
-Photo by Cristina Andrea Alvarez Cruz from Pexels - hummingbird
-Photo by nkk from Pexels - in your face parrot
-Photo by Jad El Mourad from Pexels - red bird
-Photo by Jean van der Meulen from Pexels - Peacock
+- Photo by Michelle Reeves from Pexels - puffins
+- Photo by mark broadhurst from Pexels - colourful bird
+- Photo by chris clark from Pexels - crested lark
+- Photo by Jos van Ouwerkerk from Pexels - blue head
+- Photo by Cristina Andrea Alvarez Cruz from Pexels - hummingbird
+- Photo by nkk from Pexels - in your face parrot
+- Photo by Jad El Mourad from Pexels - red bird
+- Photo by Jean van der Meulen from Pexels - Peacock
 
 
 #### Feathers
@@ -246,7 +246,7 @@ Manual testing of all buttons, links, functionality and grammer on the website h
   - That when the user clicks submit they are directed to the game choice container and the welcome container is not visible anymore.
 - Game Choice Container
   - That the logo is clearly seen when the game choice container is opened. 
-  - That the uswer can see a message with the name they inputted into the welcome page and asking them to choose an option. 
+  - That the user can see a message with the name they inputted into the welcome page and asking them to choose an option. 
   - That the user can see three buttons. 
   - That the user, when clicking the birds button, is re-directed to the Game Container with bird images and the Game Choice Container is not visible anymore.  
   - That the user, when clicking the feathers button, is re-directed to the Game Container with feather images and the Game Choice Container is not visible anymore.
@@ -280,7 +280,7 @@ Manual testing of all buttons, links, functionality and grammer on the website h
   - That the game choice container appears when the play again button is clicked and the hard luck container disappears. 
 - Congratulations Container 
   - That the congratulations container appears when the player wins and the game container along with the details container disappears. 
-  - That the player sees a message saying "Congratulations you won the game with a time of ...".  T
+  - That the player sees a message saying "Congratulations you won the game with a time of ...". 
   - That the player sees the correct time it took them to win the game at the end of this message. 
   - That the player sees a button asking them to play again. 
   - That the game choice container appears when the play again button is clicked and the congratulations container disappers.  
@@ -390,7 +390,7 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 
 ### Issues/Bugs Fixed 
 
-When playing the games intitally the divs and images from the card file were being duplicated.  The cardGenerator function was duplicating the cards each time the games were restarted.  As seen in the image below.  To resolve this issue I need to create a function that would delete the element when the game finished.  I found the solution on [w3schools](https://www.w3schools.com/jsref/met_node_removechild.asp)
+When playing the games intitally the divs and images from the card file were being duplicated.  The cardGenerator function was duplicating the cards each time the games were restarted, as seen in the image below.  To resolve this issue I needed to create a function that would delete the element when the game finished.  I found the solution on [w3schools](https://www.w3schools.com/jsref/met_node_removechild.asp)
 
 <details open>
 <summary>Issue images</summary>
@@ -400,10 +400,11 @@ When playing the games intitally the divs and images from the card file were bei
 
 Issues arose with iphone devices where the cards would not flip and the images wouldn't show.  See video below.  The error was solved by applying webkit styles to the transition and transform styles for the flip animation in CSS.  
 
-<center>**Error**</center>
-
+<details open>
+<summary>Safari/Iphone Error</summary>
 <p align="center">https://user-images.githubusercontent.com/95221562/157125074-c0d08397-b881-4798-b863-806614bf58ba.mp4</p>
-
+</details>
+<br>
 
 
 ### Issues Unresolved
@@ -492,7 +493,7 @@ Steps followed:
 -----
 ## Acknowledegments
 
-The website could not be completed without the help and support from 
- the Slack Community, my cohort facilitator Kasia and msletb class.  
+The site could not be completed without the help and support from 
+ the Slack Community, my cohort facilitator Kasia and msletb class.  I'm not going to lie I found this particular section of the course very difficult.  If I had more time I think I would have benefitted from more run throughs of projects to get a better understanding of how to start, go through and finalise a project.  Mind you throwing a person in the deep end can sometimes force them to work harder for something they want.  It was definitely a rollercoaster and while the towel was ready to be thrown in I kept a hold of it.  Onwards and upwards!   
 
 Rachel Rock March 2022
