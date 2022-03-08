@@ -149,14 +149,19 @@ section {
 }
 
 .back-card {
-   background-image: url('https://res.cloudinary.com/rockymiss/image/upload/v1646647643/Flip%20the%20Bird/back-card_llkn0j.png');
+  background-image: url('https://res.cloudinary.com/rockymiss/image/upload/v1646647643/Flip%20the%20Bird/back-card_llkn0j.png');
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .toggle-cards {
-  transform: rotatey(190deg);
+  transform: rotateY(190deg);
+  -webkit-transform: rotateY(190deg);
+  -moz-transform: rotateY(190deg);
+  -ms-transform: rotateY(190deg);
 }
 
 /*style to hide and display game sections*/
