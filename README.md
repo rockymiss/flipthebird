@@ -388,6 +388,17 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 </details>
 <br>
 
+### Accessibility 
+
+I used the chrome extension wave to test accessibility and received no errors. 
+<details open>
+<summary>Wave results</summary> 
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646773855/Flip%20the%20Bird/wave-test_yoqt1z.png"></p>
+
+</details>
+<br>
+
+
 ### Issues/Bugs Fixed 
 
 When playing the games intitally the divs and images from the card file were being duplicated.  The cardGenerator function was duplicating the cards each time the games were restarted, as seen in the image below.  To resolve this issue I needed to create a function that would delete the element when the game finished.  I found the solution on [w3schools](https://www.w3schools.com/jsref/met_node_removechild.asp)
