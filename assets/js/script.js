@@ -48,6 +48,7 @@ countLives.textContent = `Flips Left: ${setLives}`;
  * 
  * Function to create timer that will increase and display 
  * in the DOM
+ * Found on stackoverflow - see readme
  */
 function startTimer(duration, display) {
     let timer = duration;
@@ -71,7 +72,7 @@ function startTimer(duration, display) {
 
 /**
  * 
- * Function to display timer
+ * Function to display timer - stackoverflow
  */
 function timerDisplay() {
     let min = 60 * 0.0001;
@@ -134,7 +135,7 @@ function returnToChoice () {
 /**
  * 
  * This function is used to start the bird game.  num 1 is used to retrieve the
- * image data and will be used in the randomCards 
+ * image data for birds and will be used in the randomCards 
  * and cardGenerator functions.  This function also 
  * displays the timer and hides and removes classes and generates cards.
  */
@@ -151,7 +152,7 @@ function returnToChoice () {
 /**
  * 
  * This function is used to start the feather game.  num 2 is used to retrieve the
- * image data and will be used in the randomCards 
+ * image data for feathers and will be used in the randomCards 
  * and cardGenerator functions.  This function also 
  * displays the timer and hides and removes classes and generates cards.
  */
@@ -167,7 +168,7 @@ function startFeatherGame(event) {
 /**
  * 
  * This function is used to start the cartoon game.  num 3 is used to retrieve the
- * image data and will be used in the randomCards 
+ * image data for cartoons and will be used in the randomCards 
  * and cardGenerator functions.  This function also 
  * displays the timer and hides and removes classes and generates cards.
  */
@@ -203,13 +204,16 @@ function startCartoonGame(event) {
 
 /**
  * This function puts all of the cards into the DOM
- * @param {correct card data to target} num 
+ * @param {correct card data to target} num
+ * This is code I followed from a develpedbyEd youtube video
+ * see readme for further details.  The also attribute was added
+ * by me for accessibility 
  */
  let cardGenerator = (num) => {
     let cardInfo = randomCards(num);
      
     deleteChild();//deletes child to avoid duplication on restart
-   
+    
     //generates 16 cards
        cardInfo.forEach((item) => {
         //get html
@@ -257,7 +261,8 @@ function deleteChild() {
  * function to check the cards match when clicked the event(e) will
  * capture data
  * and the target is the element that was clicked 
- * code from developedbyEd with some changes see Readme
+ * code from developedbyEd (see readme) with some changes
+ * for showing and hiding containers 
  */
 const matchCards = (e) => {
     const cardClicked = e.target;
