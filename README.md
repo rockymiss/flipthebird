@@ -11,7 +11,7 @@ Link to the repository is [here](https://github.com/rockymiss/flipthebird).
 
 The Design has been focused to **Desktop** first and **Responsive**
 
-![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646745681/Flip%20the%20Bird/flip-mockup_thutsp.png) <!--mockup image here-->
+![alt text](https://res.cloudinary.com/rockymiss/image/upload/v1646745681/Flip%20the%20Bird/flip-mockup_thutsp.png)
 
 -----
 
@@ -167,12 +167,15 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 
 - I would also like to add a leader board showing the fastest times to complete each game. 
 
+- Links to social media.  While could have been easily added I didn't feel they were necessary for this project as they served no purpose to the game. 
+
 -----
 ## Technologies Used 
 
 
 - HTML5 to provide content and structure to the website.
 - CSS3 provides styles for the website. 
+- Javascript ES6 to provide interactivity to the site. 
 - [Coolors.co](https://coolors.co/) to select colors for the website that would work well together.  
 - [Cloudinary.com](https://www.cloudinary.com/) to store images for the website.
 - [Google Fonts](https://fonts.google.com/) for font.
@@ -200,7 +203,9 @@ For the logo I used Paalalabas Wide which was created externally using canva.com
 - [W3schools](https://www.w3schools.com/) 
 - I used [Stackoverflow](https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript) but in particular for the timer. 
 - [Developed By Ed Flip Game](https://www.youtube.com/watch?v=-tlb4tv4mC4) for structure and walkthrough of the game.  I used this code for the appending of the card images, shuffle and matching of cards.  I changed the code to suit this game as it was three games in one.  I struggled initially with Javascript and this walkthrough video really helped me get a better understanding of it.  Particularily manipulating the DOM.  I also liked the way he created functions for the data.  I mostly kept his transform styles of the cards flipping.  I tried it a few other ways but I really liked this style and it worked well with my theme.   
+- [cssportal](https://www.cssportal.com/css-cubic-bezier-generator/) to understand use of cubic Bezier transition when flipping the card. 
 - [Udemy- The Complete 2022 Web Development Bootcamp](https://www.udemy.com)
+- [Developed by Ed](https://developedbyed.com/) to get a better understanding of Javascript
    
 
 ### Images
@@ -231,19 +236,60 @@ Cartoon images created using [Canva.com](https://www.canva.com/).
 
 Manual testing of all buttons, links, functionality and grammer on the website has been carried out.  The following was verified by manual testing: 
 
-- Navigation on all pages: 
-  - 
+- Logo 
+  - That the logo/name of the game can be clearly seen on the top of the page and is responsive on all screens down to 280px.   
+  - That the logo when clicked will return the user to the welcome page. 
+- Welcome page
+  - That the Welcome message is clear and responsive on all screens down to 280px wide.
+  - That the How to Play message is clear and responsive on all screens down to 280px wide.
+  - That the user can enter their name into the input field and click submit. 
+  - That when the user clicks submit they are directed to the game choice container and the welcome container is not visible anymore.
+- Game Choice Container
+  - That the logo is clearly seen when the game choice container is opened. 
+  - That the uswer can see a message with the name they inputted into the welcome page and asking them to choose an option. 
+  - That the user can see three buttons. 
+  - That the user, when clicking the birds button, is re-directed to the Game Container with bird images and the Game Choice Container is not visible anymore.  
+  - That the user, when clicking the feathers button, is re-directed to the Game Container with feather images and the Game Choice Container is not visible anymore.
+  - That the user, when clicking the cartoons button, is re-directed to the Game Container with cartoon images and the Game Choice Container is not visible anymore.
+- Game Container
+  - That after the user clicks the bird button on the game choice container the game container opens along with the details container and the game choice container disappears.   When the user clicks the images that they are bird images. 
+  - That after the user clicks the feather button on the game choice container the game container opens along with the details container and the game choice container disappears.   When the user clicks the images that they are feather images. 
+  - That after the user clicks the cartoon button on the game choice container the game container opens along with the details container and the game choice container disappears.   When the user clicks the images that they are cartoon images.
+    - Playing the games 
+      - When the user clicks a card it flips over. 
+      - When the user clicks a second card it flips over and the first card remains. 
+      - If the cards match that the two cards remain facing up and the user can choose another card. 
+      - That the user cannot click on matched cards that remain facing up to flip them back over. 
+      - If the cards do not match that the two unmatched cards flip back over and the user can try again.
+      - That the player loses the game when they have 8 failed attempts to match pairs. 
+      - That the player wins the game if they match all of the cards.   
+- Details Container
+  - That when the user chooses any of the three games the details container opens and appears above the games container. 
+  - That the timer is displayed clearly. 
+  - That the number of flips the user has to start the game is 8
+  - That the number of flips left is displayed clearly. 
+  - That the timer counts upwards showing the user how long it takes to play the game. 
+  - That the lives decrease as the player fails to match a pair of cards. 
+  - That when the game is re-started or a different game is chosen the time resets back to zero.
+  - That when the game is re-started or a different game is chosen the flips left resets back to 8. 
+  - That the details container is responsive on all screens down to 280px wide. 
+- Hard Luck Container 
+  - That the hard luck container appears when the player loses and the game container along with the details container disappears. 
+  - That the player sees a message saying "Sorry you have lost". 
+  - That the player sees a button asking them to play again. 
+  - That the game choice container appears when the play again button is clicked and the hard luck container disappears. 
+- Congratulations Container 
+  - That the congratulations container appears when the player wins and the game container along with the details container disappears. 
+  - That the player sees a message saying "Congratulations you won the game with a time of ...".  T
+  - That the player sees the correct time it took them to win the game at the end of this message. 
+  - That the player sees a button asking them to play again. 
+  - That the game choice container appears when the play again button is clicked and the congratulations container disappers.  
 - Footer on all pages: 
-  -   
-- etc
-  - 
-
-
-Note:    
+  - That the footer remains visible no matter what container is visible. 
 
 ### User Testing
 
-The website was sent to a group of approximately 20 people of all different ages.  My children 6 and 8 also tested the game and could manage functionality well and really enjoyed it.  Other users found the game easy to work through but found it hard to win in under 8 flips.  I didn't change the flip lives because of this as all users kept going back to the game to try to win!  Some in competition with others.  I liked this as they kept coming back to it.  
+The website was sent to a group of approximately 15 people of all different ages.  My children 6 and 8 also tested the game and could manage functionality well and really enjoyed it.  Other users found the game easy to work through but found it hard to win in under 8 flips.  I didn't change the flip lives because of this as all users kept going back to the game to try to win!  Some in competition with others.  I liked this as they kept coming back to it.  Devices used to test were as follows: 
 
 - Huawei P30
 - IPhone 7s
