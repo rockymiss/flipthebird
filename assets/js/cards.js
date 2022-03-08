@@ -1,4 +1,4 @@
-//card data for bird images 
+//card data for bird images, idea from developedbyEd video to create functions for the data
 const getImageData = () => [
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161422/Flip%20the%20Bird/pexels-michelle-reeves-puffins_qa3amh.png", name: "puffins" },
     {imgSrc: "https://res.cloudinary.com/rockymiss/image/upload/v1646161422/Flip%20the%20Bird/pexels-mark-broadhurst-colorfulparrot_lutlc4.png", name: "parrotcolor" },
