@@ -69,36 +69,36 @@ The main aim is to be able to know how to play the game, choose from different g
 Features are set up to be simple, welcoming and easy to use.  The main existing features are: 
 
 - Logo
-The logo is always visible at the top of the page and if clicked the user can return to the welcome container at any time. 
+  - The logo is always visible at the top of the page and if clicked the user can return to the welcome container at any time. 
    
 - Welcome Container
-The welcome container is visible when first loaded.  This container tells the user what the game is about and how to play the game.  The container has an input for the user's name and a button to start the game. 
+  - The welcome container is visible when first loaded.  This container tells the user what the game is about and how to play the game.  The container has an input for the user's name and a button to start the game. 
 
 - Game Choice Container
-Once the user submits their name this container will only be visible along with the logo.  This container has three buttons to choose from three different games, birds, feathers or cartoons. 
+  - Once the user submits their name this container will only be visible along with the logo.  This container has three buttons to choose from three different games, birds, feathers or cartoons. 
 
 - Details Container
-The details container appears below the logo and above the playing cards on all games.  It shows a timer so the user can see how long it takes them to play the game and it shows how many lives/flips the user has left to complete the game. 
+  - The details container appears below the logo and above the playing cards on all games.  It shows a timer so the user can see how long it takes them to play the game and it shows how many lives/flips the user has left to complete the game. 
 
 - Game Container 
-The game container contains 16 cards in a grid.  There are 8 matching pairs in total.  The cards can be flipped over to see the images as the user clicks them.  Cards that match will stay visible, cards that don't will flip back over. 
+  - The game container contains 16 cards in a grid.  There are 8 matching pairs in total.  The cards can be flipped over to see the images as the user clicks them.  Cards that match will stay visible, cards that don't will flip back over. 
 
 - Losing Container 
-If the user runs out of lives the Game container will disappear and the losing container will show telling the user they have lost.  This container will have a button allowing the user to play again by choosing a game. 
+  - If the user runs out of lives the Game container will disappear and the losing container will show telling the user they have lost.  This container will have a button allowing the user to play again by choosing a game. 
 
 - Winning Container
-If the user matches all cards correctly the Game container will disappear and the winning container will show telling the user they have won and how long it took them to match all of the cards.  This container will have a button allowing the user to play again by choosing a game. 
+  - If the user matches all cards correctly the Game container will disappear and the winning container will show telling the user they have won and how long it took them to match all of the cards.  This container will have a button allowing the user to play again by choosing a game. 
 
 - Buttons
-There are various buttons used throughout the game:
-  - Welcome Container: 
-    - Begin Button once clicked allows the user to start and see options for different games. 
-  - Game Choice Container: 
-    - Birds Button once clicked allows the user to play the bird images game.
-    - Feathers Button once clicked allows the user to play the feather images game.
-    - Cartoon Button once clicked allows the user to play the cartoon images game.
-  - Losing Container and winning Containers:
-    - Play Again Button once clicked allows the user to play again by choosing a game. 
+  - There are various buttons used throughout the game:
+    - Welcome Container: 
+      - Begin Button once clicked allows the user to start and see options for different games. 
+    - Game Choice Container: 
+      - Birds Button once clicked allows the user to play the bird images game.
+      - Feathers Button once clicked allows the user to play the feather images game.
+      - Cartoon Button once clicked allows the user to play the cartoon images game.
+    - Losing Container and winning Containers:
+      - Play Again Button once clicked allows the user to play again by choosing a game. 
 
 ### Structure Plane
 
