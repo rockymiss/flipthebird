@@ -301,13 +301,7 @@ The website was sent to a group of approximately 15 people of all different ages
 - Samung Galaxy S10+
 - Samsung S8  
 
-This testing proved very helpful with responsivness errors and other errors that did not show up using chrome dev tools.  Issues arose with iphone devices where the cards would not flip and the images wouldn't show.  See video below.  The error was solved by applying webkit styles to the transition and transform styles for the flip animation in CSS.  
-
-<center>**Error**</center>
-
-<p align="center">https://user-images.githubusercontent.com/95221562/157125074-c0d08397-b881-4798-b863-806614bf58ba.mp4</p>
-
-
+This testing proved very helpful with responsivness errors and other errors that did not show up using chrome dev tools.  
 
 ### Browser Testing
 
@@ -389,16 +383,26 @@ I used [a11y](https://https://color.a11y.com/) to test the color contrast on the
 
 ### Issues/Bugs Fixed 
 
-
-### Issues Unresolved
-
-
+When playing the games intitally the divs and images from the card file were being duplicated.  The cardGenerator function was duplicating the cards each time the games were restarted.  As seen in the image below.  To resolve this issue I need to create a function that would delete the element when the game finished.  I found the solution on [w3schools](https://www.w3schools.com/jsref/met_node_removechild.asp)
 
 <details open>
 <summary>Issue images</summary>
-<p align="center"><img src="#"></p>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646753345/Flip%20the%20Bird/duplication-node_pfhwhj.png"></p>
 </details>
 <br>
+
+Issues arose with iphone devices where the cards would not flip and the images wouldn't show.  See video below.  The error was solved by applying webkit styles to the transition and transform styles for the flip animation in CSS.  
+
+<center>**Error**</center>
+
+<p align="center">https://user-images.githubusercontent.com/95221562/157125074-c0d08397-b881-4798-b863-806614bf58ba.mp4</p>
+
+
+
+### Issues Unresolved
+
+The game could still be played by Safari/iphone users after the above issue was resolved however there were still some minor glitches where every now and again an unflipped card would flash on and off.  I suspect it has something to do with the perspective in the styles on the animation however I was unable to resolve it before the deadline.  While the game still functions well it would give iphone users an advantage as they may see unflipped cards.  
+
 
 -----
 ## Version Control
