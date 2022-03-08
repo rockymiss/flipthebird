@@ -331,15 +331,22 @@ The website was tested using Jigsaw W3C validation.
 <details open>
 <summary>CSS Validator Clear</summary>
 <br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646684589/Flip%20the%20Bird/css-validator-complete_gackut.png"></p><!--validator clear photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646684589/Flip%20the%20Bird/css-validator-complete_gackut.png"></p>
 
+</details>
+<br>
+
+<details open>
+<summary>JSHint Test Error</summary>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646754313/Flip%20the%20Bird/jshint-errors-flip_sebde1.png"></p>
 </details>
 <br>
 
 <details open>
 <summary>JSHint Test</summary>
 <br>
-<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646751399/Flip%20the%20Bird/jshint-flipbird_pqstwx.png"></p><!--validator clear photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646751399/Flip%20the%20Bird/jshint-flipbird_pqstwx.png"></p>
 
 </details>
 <br>
