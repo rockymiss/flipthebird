@@ -382,7 +382,7 @@ To check responsiveness I used Google Chrome Dev Tools.  Desktop, Mobile and tab
 I used [a11y](https://https://color.a11y.com/) to test the color contrast on the website which produced no issues. 
 <details open>
 <summary>Color Contrast Results Preview</summary> 
-<p align="center"><img src=""></p><!--Color contrast photos-->
+<p align="center"><img src="https://res.cloudinary.com/rockymiss/image/upload/v1646752998/Flip%20the%20Bird/color-contrast-flip_xoqcog.png"></p>
 
 </details>
 <br>
