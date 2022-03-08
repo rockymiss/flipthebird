@@ -491,7 +491,7 @@ Steps followed:
 
 
 -----
-## Acknowledegments
+## Acknowledegments/Conclusion
 
 The site could not be completed without the help and support from 
  the Slack Community, my cohort facilitator Kasia and msletb class.  I'm not going to lie I found this particular section of the course very difficult.  If I had more time I think I would have benefitted from more run throughs of projects to get a better understanding of how to start, go through and finalise a project.  Mind you throwing a person in the deep end can sometimes force them to work harder for something they want.  It was definitely a rollercoaster and while the towel was ready to be thrown in I kept a hold of it.  Onwards and upwards!   
